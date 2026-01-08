@@ -1,0 +1,56 @@
+.about-section {
+    background: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
+    color: white;
+    padding: 120px 0;
+}
+
+.about-text {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-number {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--color-accent);
+    background: linear-gradient(to bottom, var(--color-accent), #0056b3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+    .stats-grid {
+        gap: 40px;
+    }
+
+    .stat-number {
+        font-size: 3rem;
+    }
+}
