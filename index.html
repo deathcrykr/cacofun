@@ -143,7 +143,7 @@
     .intro-shell {
       position: absolute;
       left: 50%;
-      bottom: 6vh;
+      bottom: clamp(108px, 14vh, 168px);
       width: min(72vw, 980px);
       padding: 1.1rem 1.25rem;
       border: 1px solid rgba(141, 247, 163, 0.18);
@@ -205,6 +205,45 @@
       animation: blink 1s steps(1) infinite;
     }
 
+    .site-footer {
+      position: absolute;
+      left: 50%;
+      bottom: clamp(20px, 3.6vh, 40px);
+      width: min(84vw, 1080px);
+      margin: 0;
+      color: rgba(194, 255, 204, 0.78);
+      font-family: "Minecraft", "Iosevka", "Menlo", "Consolas", monospace;
+      font-size: clamp(11px, 0.95vw, 16px);
+      line-height: 1.7;
+      letter-spacing: 0.03em;
+      text-align: center;
+      text-shadow:
+        0 0 3px rgba(141, 247, 163, 0.28),
+        0 0 10px rgba(89, 255, 120, 0.12);
+      transform: translateX(-50%);
+      z-index: 4;
+      opacity: 0.9;
+      animation: flicker 120ms steps(2) infinite;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .site-footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 720px) {
+      .intro-shell {
+        width: min(88vw, 980px);
+        bottom: clamp(132px, 24vh, 220px);
+      }
+
+      .site-footer {
+        width: min(88vw, 1080px);
+        font-size: clamp(10px, 2.8vw, 14px);
+      }
+    }
+
     @keyframes flicker {
       0% { opacity: 0.96; }
       50% { opacity: 1; }
@@ -236,6 +275,11 @@
     <div class="intro-shell" aria-label="Game introduction">
       <pre id="intro" class="intro"><span id="intro-text"></span><span class="intro-cursor">█</span></pre>
     </div>
+    <footer class="site-footer" aria-label="Contact information">
+      <p>travis@caco.fun</p>
+      <p>139, Hwasambuk-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+      <p>&copy;CACO All rights reserved.</p>
+    </footer>
   </main>
 
   <script>
