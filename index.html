@@ -55,7 +55,7 @@
       --scanline: rgba(150, 255, 168, 0.08);
       --vignette: rgba(0, 0, 0, 0.42);
       --offset-x: 6vw;
-      --scroll-headroom: 0px;
+      --stage-scroll-space: 0px;
       --stage-shift-y: 0px;
       --title-scale: 1.2;
       --title-shift-x: -4vw;
@@ -82,7 +82,7 @@
 
     .crt {
       position: relative;
-      min-height: calc(100vh + var(--scroll-headroom));
+      min-height: calc(100vh + var(--stage-scroll-space));
       background:
         radial-gradient(circle at 50% 30%, rgba(49, 255, 110, 0.15), transparent 34%),
         radial-gradient(circle at 50% 50%, rgba(141, 247, 163, 0.05), transparent 64%),
@@ -134,7 +134,7 @@
 
     .stage-track {
       position: absolute;
-      top: var(--scroll-headroom);
+      top: var(--stage-scroll-space);
       left: 0;
       right: 0;
       height: 100vh;
@@ -361,7 +361,7 @@
 
     let introBaseHeight = 0;
     let introCharsWritten = 0;
-    let scrollHeadroom = 0;
+    let appliedStageLift = 0;
 
     const seed = (x, y) => {
       const value = Math.sin(x * 12.9898 + y * 78.233) * 43758.5453;
@@ -442,24 +442,6 @@
       return Math.min(Math.max(value, min), max);
     }
 
-    function getScrollHeadroom() {
-      const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-      const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-      const ratio = viewportWidth <= 720 ? 0.4 : 0.22;
-      return Math.round(viewportHeight * ratio);
-    }
-
-    function syncScrollHeadroom(resetScroll = false) {
-      const currentScroll = window.scrollY || window.pageYOffset || 0;
-      const anchoredToViewport = Math.abs(currentScroll - scrollHeadroom) <= 12;
-      scrollHeadroom = getScrollHeadroom();
-      root.style.setProperty("--scroll-headroom", `${scrollHeadroom}px`);
-
-      if (resetScroll || anchoredToViewport) {
-        window.scrollTo(0, scrollHeadroom);
-      }
-    }
-
     function measureIntroBaseHeight() {
       if (!introShell) {
         return;
@@ -473,6 +455,8 @@
         return;
       }
 
+      const currentScroll = window.scrollY || window.pageYOffset || 0;
+      const anchoredToScene = Math.abs(currentScroll - appliedStageLift) <= 16;
       const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
       const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
       const currentIntroHeight = introShell.getBoundingClientRect().height;
@@ -483,8 +467,16 @@
       const growthLift = introGrowth * (viewportWidth <= 720 ? 0.74 : 0.42);
       const maxLift = viewportHeight * (viewportWidth <= 720 ? 0.34 : 0.18);
       const targetLift = clamp(startingLift + progressLift + growthLift, 0, maxLift);
+      const roundedLift = Math.round(targetLift);
 
-      root.style.setProperty("--stage-shift-y", `${-Math.round(targetLift)}px`);
+      root.style.setProperty("--stage-scroll-space", `${roundedLift}px`);
+      root.style.setProperty("--stage-shift-y", `${-roundedLift}px`);
+
+      if (anchoredToScene) {
+        window.scrollTo(0, roundedLift);
+      }
+
+      appliedStageLift = roundedLift;
     }
 
     async function typeIntro(text, minDelay, maxDelay) {
@@ -524,12 +516,8 @@
     renderTitle(tick);
     drawCharacter(0);
     scheduleCharacter();
-    syncScrollHeadroom(true);
     runIntro();
-    window.addEventListener("resize", () => {
-      syncScrollHeadroom();
-      updateStageLift();
-    });
+    window.addEventListener("resize", updateStageLift);
 
     window.setInterval(() => {
       tick += 1;
