@@ -24,6 +24,7 @@
       --scanline: rgba(150, 255, 168, 0.08);
       --vignette: rgba(0, 0, 0, 0.42);
       --offset-x: 6vw;
+      --stage-shift-y: 0px;
       --title-scale: 1.2;
       --title-shift-x: -4vw;
       --character-shift-x: -1vw;
@@ -98,10 +99,19 @@
       z-index: 3;
     }
 
-    .stage {
+    .stage-track {
       position: absolute;
       inset: 0;
       z-index: 4;
+      transform: translateY(var(--stage-shift-y));
+      transition: transform 180ms ease-out;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .stage {
+      position: absolute;
+      inset: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -109,8 +119,6 @@
       gap: clamp(8px, 1.8vh, 22px);
       transform: translateX(var(--offset-x));
       animation: breathe 6s ease-in-out infinite;
-      pointer-events: none;
-      user-select: none;
     }
 
     .ascii-art {
@@ -268,11 +276,13 @@
 </head>
 <body>
   <main class="crt">
-    <section class="stage">
-      <pre id="title" class="ascii-art title" aria-label="sb_UI_title_title.png Symbol Title"></pre>
-      <pre id="character" class="ascii-art character" aria-label="ASCII character animation"></pre>
-    </section>
-    <div class="intro-shell" aria-label="Game introduction">
+    <div id="stage-track" class="stage-track">
+      <section class="stage">
+        <pre id="title" class="ascii-art title" aria-label="sb_UI_title_title.png Symbol Title"></pre>
+        <pre id="character" class="ascii-art character" aria-label="ASCII character animation"></pre>
+      </section>
+    </div>
+    <div id="intro-shell" class="intro-shell" aria-label="Game introduction">
       <pre id="intro" class="intro"><span id="intro-text"></span><span class="intro-cursor">█</span></pre>
     </div>
     <footer class="site-footer" aria-label="Contact information">
@@ -293,7 +303,28 @@
 
     const titleOutput = document.getElementById("title");
     const characterOutput = document.getElementById("character");
+    const stageTrack = document.getElementById("stage-track");
+    const introShell = document.getElementById("intro-shell");
+    const root = document.documentElement;
     const introText = document.getElementById("intro-text");
+    const totalIntroChars = introScript.reduce((total, step) => {
+      if (step.type === "pause") {
+        return total;
+      }
+
+      if (step.type === "command") {
+        return total + step.prompt.length + step.text.length + 1;
+      }
+
+      if (step.type === "line") {
+        return total + step.text.length + 1;
+      }
+
+      return total;
+    }, 0);
+
+    let introBaseHeight = 0;
+    let introCharsWritten = 0;
 
     const seed = (x, y) => {
       const value = Math.sin(x * 12.9898 + y * 78.233) * 43758.5453;
@@ -366,6 +397,39 @@
 
     function appendIntro(text) {
       introText.textContent += text;
+      introCharsWritten += text.length;
+      updateStageLift();
+    }
+
+    function clamp(value, min, max) {
+      return Math.min(Math.max(value, min), max);
+    }
+
+    function measureIntroBaseHeight() {
+      if (!introShell) {
+        return;
+      }
+
+      introBaseHeight = introShell.getBoundingClientRect().height;
+    }
+
+    function updateStageLift() {
+      if (!stageTrack || !introShell) {
+        return;
+      }
+
+      const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+      const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+      const currentIntroHeight = introShell.getBoundingClientRect().height;
+      const introGrowth = Math.max(0, currentIntroHeight - introBaseHeight);
+      const introProgress = totalIntroChars ? introCharsWritten / totalIntroChars : 0;
+      const startingLift = introCharsWritten > 0 ? (viewportWidth <= 720 ? 56 : 18) : 0;
+      const progressLift = (viewportWidth <= 720 ? 76 : 34) * introProgress;
+      const growthLift = introGrowth * (viewportWidth <= 720 ? 0.74 : 0.42);
+      const maxLift = viewportHeight * (viewportWidth <= 720 ? 0.34 : 0.18);
+      const targetLift = clamp(startingLift + progressLift + growthLift, 0, maxLift);
+
+      root.style.setProperty("--stage-shift-y", `${-Math.round(targetLift)}px`);
     }
 
     async function typeIntro(text, minDelay, maxDelay) {
@@ -377,6 +441,9 @@
 
     async function runIntro() {
       introText.textContent = "";
+      introCharsWritten = 0;
+      measureIntroBaseHeight();
+      updateStageLift();
 
       for (const step of introScript) {
         if (step.type === "pause") {
@@ -403,6 +470,7 @@
     drawCharacter(0);
     scheduleCharacter();
     runIntro();
+    window.addEventListener("resize", updateStageLift);
 
     window.setInterval(() => {
       tick += 1;
