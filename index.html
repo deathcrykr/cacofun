@@ -24,6 +24,7 @@
       --scanline: rgba(150, 255, 168, 0.08);
       --vignette: rgba(0, 0, 0, 0.42);
       --offset-x: 6vw;
+      --scroll-headroom: 0px;
       --stage-shift-y: 0px;
       --title-scale: 1.2;
       --title-shift-x: -4vw;
@@ -44,12 +45,13 @@
 
     body {
       background: var(--room);
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
 
     .crt {
-      position: fixed;
-      inset: 0;
+      position: relative;
+      min-height: calc(100vh + var(--scroll-headroom));
       background:
         radial-gradient(circle at 50% 30%, rgba(49, 255, 110, 0.15), transparent 34%),
         radial-gradient(circle at 50% 50%, rgba(141, 247, 163, 0.05), transparent 64%),
@@ -101,7 +103,10 @@
 
     .stage-track {
       position: absolute;
-      inset: 0;
+      top: var(--scroll-headroom);
+      left: 0;
+      right: 0;
+      height: 100vh;
       z-index: 4;
       transform: translateY(var(--stage-shift-y));
       transition: transform 180ms ease-out;
@@ -325,6 +330,7 @@
 
     let introBaseHeight = 0;
     let introCharsWritten = 0;
+    let scrollHeadroom = 0;
 
     const seed = (x, y) => {
       const value = Math.sin(x * 12.9898 + y * 78.233) * 43758.5453;
@@ -405,6 +411,24 @@
       return Math.min(Math.max(value, min), max);
     }
 
+    function getScrollHeadroom() {
+      const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+      const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+      const ratio = viewportWidth <= 720 ? 0.4 : 0.22;
+      return Math.round(viewportHeight * ratio);
+    }
+
+    function syncScrollHeadroom(resetScroll = false) {
+      const currentScroll = window.scrollY || window.pageYOffset || 0;
+      const anchoredToViewport = Math.abs(currentScroll - scrollHeadroom) <= 12;
+      scrollHeadroom = getScrollHeadroom();
+      root.style.setProperty("--scroll-headroom", `${scrollHeadroom}px`);
+
+      if (resetScroll || anchoredToViewport) {
+        window.scrollTo(0, scrollHeadroom);
+      }
+    }
+
     function measureIntroBaseHeight() {
       if (!introShell) {
         return;
@@ -469,8 +493,12 @@
     renderTitle(tick);
     drawCharacter(0);
     scheduleCharacter();
+    syncScrollHeadroom(true);
     runIntro();
-    window.addEventListener("resize", updateStageLift);
+    window.addEventListener("resize", () => {
+      syncScrollHeadroom();
+      updateStageLift();
+    });
 
     window.setInterval(() => {
       tick += 1;
