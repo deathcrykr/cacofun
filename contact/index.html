@@ -467,6 +467,17 @@
       return "";
     }
 
+    function openMailFallback(payload) {
+      const subject = encodeURIComponent(`CACO Contact | ${payload.name}`);
+      const body = encodeURIComponent(
+        `Name: ${payload.name}\n` +
+        `Email: ${payload.email}\n\n` +
+        `${payload.message}`
+      );
+
+      window.location.href = `mailto:travis@caco.fun?subject=${subject}&body=${body}`;
+    }
+
     async function submitContactForm(event) {
       event.preventDefault();
 
@@ -487,7 +498,9 @@
 
       try {
         if (RESEND_PROXY_URL.includes("YOUR-RESEND-PROXY")) {
-          throw new Error("Set your deployed Resend proxy URL in contact/index.html before using the form.");
+          openMailFallback(payload);
+          setStatus("success", "Your mail app is opening so you can send the message directly.");
+          return;
         }
 
         const response = await fetch(RESEND_PROXY_URL, {

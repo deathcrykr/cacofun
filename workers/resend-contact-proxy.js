@@ -1,11 +1,24 @@
-const PLACEHOLDER_API_KEY = "re_GrtrVRVr_BCm4aGUqquA1kRmjkJnm9AkT";
+const PLACEHOLDER_API_KEY = "REPLACE_WITH_REAL_RESEND_API_KEY";
 const ALLOWED_ORIGINS = new Set([
   "https://caco.fun",
   "https://www.caco.fun"
 ]);
 
+function isAllowedOrigin(origin) {
+  if (ALLOWED_ORIGINS.has(origin)) {
+    return true;
+  }
+
+  try {
+    const url = new URL(origin);
+    return url.protocol === "http:" && (url.hostname === "localhost" || url.hostname === "127.0.0.1");
+  } catch (error) {
+    return false;
+  }
+}
+
 function createCorsHeaders(origin) {
-  const allowedOrigin = ALLOWED_ORIGINS.has(origin) ? origin : "https://caco.fun";
+  const allowedOrigin = isAllowedOrigin(origin) ? origin : "https://caco.fun";
 
   return {
     "Access-Control-Allow-Origin": allowedOrigin,
@@ -59,7 +72,7 @@ export default {
 
     if (resendApiKey === PLACEHOLDER_API_KEY) {
       return json(origin, {
-        error: "Replace `re_GrtrVRVr_BCm4aGUqquA1kRmjkJnm9AkT` with your real Resend API key in the worker secret."
+        error: "Set your real Resend API key in the worker secret `RESEND_API_KEY`."
       }, 500);
     }
 
