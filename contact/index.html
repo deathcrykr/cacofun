@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | CACO</title>
+  <meta name="description" content="Contact CACO, a next-generation game studio based on the beautiful island of Jeju.">
+  <meta name="keywords" content="CACO contact, Contact CACO, Jeju game studio, game studio contact, travis@caco.fun">
+  <meta name="author" content="CACO">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://caco.fun/contact/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CACO">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Contact | CACO">
+  <meta property="og:description" content="Contact CACO, a next-generation game studio based on the beautiful island of Jeju.">
+  <meta property="og:url" content="https://caco.fun/contact/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contact | CACO">
+  <meta name="twitter:description" content="Contact CACO, a next-generation game studio based on the beautiful island of Jeju.">
+  <link rel="icon" href="/caco.ico">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "CACO Contact",
+      "url": "https://caco.fun/contact/",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "CACO",
+        "url": "https://caco.fun/",
+        "email": "travis@caco.fun",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "139, Hwasambuk-ro",
+          "addressLocality": "Jeju-si",
+          "addressRegion": "Jeju-do",
+          "addressCountry": "KR"
+        }
+      }
+    }
+  </script>
+  <style>
+    @font-face {
+      font-family: "Minecraft";
+      src: url("/Minecraft.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    :root {
+      color-scheme: dark;
+      --bg: #031006;
+      --bg-deep: #010603;
+      --panel: rgba(7, 23, 10, 0.84);
+      --panel-bright: rgba(18, 52, 23, 0.74);
+      --line: rgba(141, 247, 163, 0.2);
+      --line-strong: rgba(141, 247, 163, 0.36);
+      --text: #d7ffde;
+      --muted: rgba(203, 255, 212, 0.72);
+      --accent: #9afcae;
+      --accent-strong: #c4ffd1;
+      --shadow: rgba(35, 125, 52, 0.18);
+      --danger: #ffcfbf;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at top, rgba(52, 180, 90, 0.15), transparent 34%),
+        radial-gradient(circle at 20% 20%, rgba(100, 255, 140, 0.08), transparent 26%),
+        linear-gradient(180deg, #0d2d14 0%, var(--bg) 24%, var(--bg-deep) 100%);
+      color: var(--text);
+      font-family: "Minecraft", "Menlo", "Consolas", monospace;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        repeating-linear-gradient(
+          180deg,
+          rgba(145, 255, 167, 0.06) 0 1px,
+          rgba(0, 0, 0, 0.16) 1px 3px
+        ),
+        linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.2),
+          transparent 10%,
+          transparent 90%,
+          rgba(0, 0, 0, 0.2)
+        );
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    a {
+      color: var(--accent-strong);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      width: min(1180px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 28px 0 56px;
+    }
+
+    .corner-menu {
+      position: absolute;
+      top: clamp(18px, 3vw, 30px);
+      left: clamp(18px, 3vw, 32px);
+      z-index: 6;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .corner-menu a {
+      color: rgba(210, 255, 217, 0.88);
+      font-family: "Minecraft", "Iosevka", "Menlo", "Consolas", monospace;
+      font-size: clamp(12px, 1.05vw, 16px);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-shadow:
+        0 0 3px rgba(141, 247, 163, 0.28),
+        0 0 10px rgba(89, 255, 120, 0.12);
+      opacity: 0.92;
+      transition: opacity 120ms ease, color 120ms ease;
+    }
+
+    .corner-menu a:hover {
+      color: #effff2;
+      opacity: 1;
+    }
+
+    .corner-menu a::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      margin-top: 0.35rem;
+      background: rgba(141, 247, 163, 0.26);
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: minmax(320px, 760px);
+      gap: 24px;
+      align-items: start;
+      justify-content: center;
+      margin-top: 84px;
+    }
+
+    .panel {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(180deg, rgba(19, 53, 25, 0.56), rgba(4, 12, 6, 0.86)),
+        var(--panel);
+      box-shadow:
+        inset 0 0 28px rgba(141, 247, 163, 0.04),
+        0 0 24px var(--shadow);
+      padding: clamp(20px, 3vw, 32px);
+    }
+
+    .panel::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgba(141, 247, 163, 0.03) 38%,
+        rgba(141, 247, 163, 0.08) 50%,
+        rgba(141, 247, 163, 0.03) 62%,
+        transparent 100%
+      );
+      transform: translateY(-120%);
+      animation: panel-scan 8s linear infinite;
+      pointer-events: none;
+    }
+
+    .panel > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .panel h2 {
+      font-size: clamp(1.35rem, 2vw, 2rem);
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .panel-copy {
+      color: var(--muted);
+    }
+
+    .meta-grid {
+      display: grid;
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .meta-label {
+      display: block;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.72rem;
+      margin-bottom: 8px;
+    }
+
+    .meta-value {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .meta-value a {
+      word-break: break-word;
+    }
+
+    .info-note {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 18px;
+      margin-top: 26px;
+    }
+
+    .field {
+      display: grid;
+      gap: 8px;
+    }
+
+    .field span {
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.72rem;
+    }
+
+    .field input,
+    .field textarea {
+      width: 100%;
+      border: 1px solid rgba(141, 247, 163, 0.24);
+      background: rgba(1, 7, 2, 0.82);
+      color: var(--text);
+      font: inherit;
+      padding: 0.95rem 1rem;
+      outline: none;
+      transition: border-color 140ms ease, box-shadow 140ms ease, background 140ms ease;
+    }
+
+    .field input::placeholder,
+    .field textarea::placeholder {
+      color: rgba(202, 255, 210, 0.32);
+    }
+
+    .field input:focus,
+    .field textarea:focus {
+      border-color: var(--line-strong);
+      box-shadow: 0 0 0 3px rgba(141, 247, 163, 0.08);
+      background: rgba(2, 12, 4, 0.88);
+    }
+
+    .field textarea {
+      min-height: 220px;
+      resize: vertical;
+    }
+
+    .form-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 6px;
+    }
+
+    .submit-button {
+      border: 1px solid rgba(170, 255, 186, 0.36);
+      background: linear-gradient(180deg, rgba(121, 255, 149, 0.16), rgba(8, 31, 12, 0.9));
+      color: var(--accent-strong);
+      font: inherit;
+      padding: 0.95rem 1.45rem;
+      min-width: 180px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      box-shadow: 0 0 16px rgba(121, 255, 149, 0.12);
+    }
+
+    .submit-button[disabled] {
+      opacity: 0.6;
+      cursor: progress;
+    }
+
+    .form-status {
+      min-height: 1.4em;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .form-status[data-state="success"] {
+      color: var(--accent-strong);
+    }
+
+    .form-status[data-state="error"] {
+      color: var(--danger);
+    }
+
+    .footer {
+      width: min(84vw, 1080px);
+      margin: 28px auto 0;
+      padding-top: 22px;
+      color: rgba(194, 255, 204, 0.78);
+      font-family: "Minecraft", "Iosevka", "Menlo", "Consolas", monospace;
+      font-size: clamp(11px, 0.95vw, 16px);
+      line-height: 1.7;
+      letter-spacing: 0.03em;
+      text-align: center;
+      text-shadow:
+        0 0 3px rgba(141, 247, 163, 0.28),
+        0 0 10px rgba(89, 255, 120, 0.12);
+      opacity: 0.9;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    @keyframes panel-scan {
+      0% { transform: translateY(-120%); }
+      100% { transform: translateY(120%); }
+    }
+
+    @media (max-width: 900px) {
+      .page {
+        width: min(100vw - 24px, 1180px);
+        padding-top: 18px;
+      }
+
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .footer {
+        width: min(88vw, 1080px);
+        font-size: clamp(10px, 2.8vw, 14px);
+      }
+    }
+
+    @media (max-width: 560px) {
+      .submit-button {
+        width: 100%;
+      }
+
+      .field textarea {
+        min-height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="corner-menu" aria-label="Primary">
+      <a href="/index.html">Home</a>
+    </nav>
+
+    <section class="contact-layout">
+      <article class="panel">
+        <p class="eyebrow">Contact</p>
+        <h2>Send a message</h2>
+        <p class="panel-copy">Send a note to the studio and it will land in the CACO inbox.</p>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <label class="field">
+            <span>Name *</span>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+          </label>
+
+          <label class="field">
+            <span>Email Address *</span>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="Your email address" required>
+          </label>
+
+          <label class="field">
+            <span>Message *</span>
+            <textarea id="message" name="message" placeholder="Tell us what you are building, asking, or proposing." required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button id="submit-button" class="submit-button" type="submit">Send Message</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p>travis@caco.fun</p>
+      <p>139, Hwasambuk-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+      <p>&copy;CACO All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script>
+    const form = document.getElementById("contact-form");
+    const submitButton = document.getElementById("submit-button");
+    const formStatus = document.getElementById("form-status");
+    const RESEND_PROXY_URL = "https://YOUR-RESEND-PROXY.example.workers.dev";
+
+    function setStatus(state, message) {
+      formStatus.dataset.state = state;
+      formStatus.textContent = message;
+    }
+
+    function validateForm(payload) {
+      if (!payload.name || !payload.email || !payload.message) {
+        return "Please fill in your name, email address, and message.";
+      }
+
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(payload.email)) {
+        return "Please enter a valid email address.";
+      }
+
+      return "";
+    }
+
+    async function submitContactForm(event) {
+      event.preventDefault();
+
+      const payload = {
+        name: document.getElementById("name").value.trim(),
+        email: document.getElementById("email").value.trim(),
+        message: document.getElementById("message").value.trim()
+      };
+
+      const validationMessage = validateForm(payload);
+      if (validationMessage) {
+        setStatus("error", validationMessage);
+        return;
+      }
+
+      submitButton.disabled = true;
+      setStatus("", "Sending your message...");
+
+      try {
+        if (RESEND_PROXY_URL.includes("YOUR-RESEND-PROXY")) {
+          throw new Error("Set your deployed Resend proxy URL in contact/index.html before using the form.");
+        }
+
+        const response = await fetch(RESEND_PROXY_URL, {
+          method: "POST",
+          mode: "cors",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const result = await response.json().catch(() => ({}));
+
+        if (!response.ok) {
+          throw new Error(result.error || "Unable to send your message right now.");
+        }
+
+        form.reset();
+        setStatus("success", "Message sent. We will get back to you soon.");
+      } catch (error) {
+        setStatus(
+          "error",
+          error.message || "The form could not be sent. Please email us directly at travis@caco.fun."
+        );
+      } finally {
+        submitButton.disabled = false;
+      }
+    }
+
+    form.addEventListener("submit", submitContactForm);
+  </script>
+</body>
+</html>
