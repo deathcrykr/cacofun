@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Yo 개인정보처리방침">
+  <title>Yo 개인정보처리방침</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      line-height: 1.65;
+      font-size: 16px;
+    }
+    body {
+      margin: 0;
+      background: Canvas;
+      color: CanvasText;
+    }
+    main {
+      width: min(920px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 56px 0 80px;
+    }
+    h1, h2, h3 { line-height: 1.3; }
+    h1 { margin: 0 0 12px; font-size: clamp(2rem, 6vw, 3rem); }
+    h2 { margin-top: 44px; padding-top: 8px; font-size: 1.45rem; }
+    h3 { margin-top: 28px; font-size: 1.12rem; }
+    p, li { max-width: 78ch; }
+    .meta {
+      margin: 0 0 32px;
+      color: GrayText;
+    }
+    .notice {
+      border: 1px solid color-mix(in srgb, CanvasText 18%, transparent);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin: 28px 0;
+    }
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 18px 0 24px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 680px;
+    }
+    th, td {
+      padding: 12px 14px;
+      border: 1px solid color-mix(in srgb, CanvasText 16%, transparent);
+      vertical-align: top;
+      text-align: left;
+    }
+    th { font-weight: 700; }
+    a { color: LinkText; }
+    footer {
+      margin-top: 56px;
+      padding-top: 20px;
+      border-top: 1px solid color-mix(in srgb, CanvasText 16%, transparent);
+      color: GrayText;
+      font-size: 0.92rem;
+    }
+    @media (max-width: 600px) {
+      main { width: min(100% - 28px, 920px); padding-top: 36px; }
+      h2 { margin-top: 36px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Yo 개인정보처리방침</h1>
+    <p class="meta">시행일: 2026년 9월 2일 · 적용 앱: Yo (<code>com.caco.yochat</code>)</p>
+  </header>
+
+  <p>Yo 서비스 운영자(이하 “운영자”)는 이용자의 개인정보를 중요하게 생각하며, 서비스 제공에 필요한 범위에서 개인정보 및 기기 정보를 처리합니다. 본 개인정보처리방침은 Yo 모바일 애플리케이션과 Yo가 직접 운영하는 관련 서버·웹 기능에 적용됩니다.</p>
+
+  <section>
+    <h2>1. 처리하는 정보와 이용 목적</h2>
+    <p>Yo는 이용자가 사용하는 기능에 따라 다음 정보를 처리할 수 있습니다.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>구분</th><th>처리할 수 있는 정보</th><th>이용 목적</th></tr></thead>
+      <tbody>
+        <tr><td>계정 및 본인 확인</td><td>로그인 ID, 사용자 ID, 사용자명, 닉네임, 이메일 주소 또는 전화번호, 국가번호, 인증 정보, 비밀번호의 안전한 해시값</td><td>회원가입, 로그인, 계정 복구, 본인 확인, 부정 이용 방지</td></tr>
+        <tr><td>프로필</td><td>닉네임, 상태 메시지, 프로필 이미지 및 이미지 URL</td><td>프로필 표시, 친구·대화 기능 제공</td></tr>
+        <tr><td>기기·접속·보안</td><td>기기 ID, 플랫폼/OS 정보, 앱 정보, IP 주소, User-Agent, 세션 ID, 로그인·토큰 발급/갱신 정보, 접속 시각</td><td>세션 유지, 기기별 로그인 관리, 보안, 장애 분석, 부정 이용 방지</td></tr>
+        <tr><td>메시지 및 소셜 기능</td><td>메시지 본문, 대화방/토픽 식별자, 발신자·수신자/참여자 정보, 전송 시각, 읽음/전달 상태, 반응, 친구/차단/신고/초대 관련 정보</td><td>메시지 송수신, 다중 기기 동기화, 친구 및 커뮤니티 기능 제공</td></tr>
+        <tr><td>첨부 미디어</td><td>이용자가 선택하거나 촬영하여 전송한 사진, 영상, 음성, 파일, 스티커 및 관련 메타데이터</td><td>첨부 전송, 미디어 표시·재생, 저장 및 동기화</td></tr>
+        <tr><td>연락처</td><td>기기 연락처의 식별자, 표시 이름, 전화번호, 정규화된 전화번호 기반 동기화 식별값 및 SHA-256 전화번호 해시</td><td>Yo 이용자 찾기, 연락처 추천, 상호 연락처 기반 친구 연결</td></tr>
+        <tr><td>카메라</td><td>QR 코드 영상 프레임, 이용자가 촬영한 사진/영상</td><td>친구·콘텐츠 QR 스캔, 채팅 촬영, 영상 통화</td></tr>
+        <tr><td>마이크·음성</td><td>통화 음성, 음성 메시지, AI 음성 대화 입력</td><td>음성/영상 통화, 음성 메시지, AI 음성 기능</td></tr>
+        <tr><td>알림</td><td>FCM/APNs/VoIP 푸시 토큰, 계정과의 기기 연결 정보, 알림 라우팅 정보</td><td>새 메시지·통화 등 푸시 알림 전송</td></tr>
+        <tr><td>AI 기능 입력·출력</td><td>AI 대화 메시지/프롬프트, 필요한 대화 문맥, 음성 입력, 이용자가 AI 기능에 제공한 이미지, 생성 결과, 모델/요청 처리 메타데이터</td><td>AI 캐릭터, AI 어시스턴트, AI Adventure 등 생성형 AI 기능 제공 및 품질·오류 처리</td></tr>
+        <tr><td>이용·진단 정보</td><td>앱/기기 정보, 앱 인스턴스 또는 유사 식별정보, 기능 이용 이벤트, 오류·충돌 로그 및 진단 정보</td><td>서비스 안정성 개선, 오류 분석, 이용 현황 분석</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>연락처 처리에 관한 안내</h3>
+    <p>Yo는 연락처 친구 찾기를 위해 기기에서 연락처의 표시 이름과 전화번호를 읽을 수 있습니다. 전화번호는 정규화한 뒤 SHA-256 해시값을 생성하여 매칭에 사용합니다. 현재 클라이언트의 연락처 동기화 요청에는 연락처 식별자, 표시 이름, 전화번호 해시와 함께 <strong>정규화된 전화번호를 기반으로 만들어진 동기화 식별값이 포함될 수 있습니다.</strong> 서버의 연락처 매칭 저장소는 전화번호 해시를 중심으로 매칭합니다.</p>
+    <p>연락처 권한을 허용하지 않아도 ID 검색 등 권한이 필요하지 않은 기능은 계속 사용할 수 있습니다. 연락처 동기화 및 전화번호 기반 친구 찾기 기능은 앱의 개인정보 설정과 운영 정책에 따라 끄거나 제한할 수 있습니다.</p>
+
+    <h3>위치 권한에 관한 안내</h3>
+    <p>Yo는 주변/지역 기반 기능을 준비하거나 제공하기 위해 기기의 대략적 또는 정확한 위치 권한을 요청할 수 있습니다. <strong>2026년 9월 2일 기준으로 확인된 현재 앱 구현에서는 사용자의 위도·경도 좌표를 읽어 Yo 서버에 업로드하거나 서버에 저장하는 동작 경로가 확인되지 않았습니다.</strong> 향후 위치 정보를 실제로 수집·전송하는 기능을 제공하는 경우, 해당 기능 적용 전에 본 방침 및 필요한 인앱 고지를 갱신합니다.</p>
+  </section>
+
+  <section>
+    <h2>2. Android/iOS 기기 권한</h2>
+    <p>Yo가 요청할 수 있는 주요 권한은 다음과 같습니다. 대부분 선택 권한이며, 거부하더라도 해당 권한이 필요한 기능을 제외한 서비스는 이용할 수 있습니다.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>권한/기능</th><th>사용 목적</th></tr></thead>
+      <tbody>
+        <tr><td>연락처</td><td>Yo를 사용하는 친구 찾기, 연락처 기반 추천·자동 친구 연결</td></tr>
+        <tr><td>알림</td><td>메시지, 친구 관련 이벤트, 통화 등 알림 수신</td></tr>
+        <tr><td>대략적/정확한 위치</td><td>주변/지역 기능 제공을 위한 권한 준비. 현재 확인된 구현에서는 좌표 서버 저장 경로 없음</td></tr>
+        <tr><td>사진·동영상/미디어</td><td>이용자가 선택한 사진·동영상을 채팅에 첨부하거나 저장·미리보기</td></tr>
+        <tr><td>카메라</td><td>QR 코드 스캔, 사진 촬영, 영상 통화</td></tr>
+        <tr><td>마이크</td><td>음성 메시지, 음성/영상 통화, AI 음성 대화</td></tr>
+        <tr><td>Face ID/생체 인증(iOS, 지원 기기)</td><td>기기 내 인증을 통한 프로필/보안 기능 보호</td></tr>
+        <tr><td>네트워크 상태/인터넷</td><td>서버 연결, 메시지 송수신, 동기화, 콘텐츠 다운로드</td></tr>
+        <tr><td>포그라운드 서비스/전체 화면 통화 알림(Android)</td><td>통화 중 마이크·카메라 유지 및 수신 통화 표시</td></tr>
+      </tbody>
+    </table></div>
+    <p>권한은 Android/iOS의 시스템 설정에서 언제든 변경할 수 있습니다.</p>
+  </section>
+
+  <section>
+    <h2>3. 메시지, 통화 및 미디어 처리</h2>
+    <ol>
+      <li>메시지와 첨부 파일은 상대방에게 전달하고 여러 기기에서 대화를 동기화하기 위해 Yo 서버에서 처리될 수 있습니다.</li>
+      <li>이용자가 전송한 메시지·프로필·첨부 정보는 해당 대화의 상대방 또는 참여자에게 표시될 수 있습니다.</li>
+      <li>음성/영상 통화는 WebRTC 및 Yo의 통화/SFU 인프라를 통해 실시간으로 전달될 수 있으며, 통화 연결을 위해 사용자·방·기기·네트워크 관련 최소한의 세션 정보가 처리됩니다.</li>
+      <li>카메라 또는 마이크 권한은 실제 기능 사용 시 운영체제 권한 절차를 통해 요청합니다.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>4. AI 기능과 외부 AI 처리</h2>
+    <p>Yo의 AI 기능은 Yo 서버의 AI 게이트웨이를 통해 외부 또는 로컬 AI 모델로 라우팅될 수 있습니다. 서비스 구성에 따라 <strong>DeepSeek, Google, OpenAI, Anthropic, Alibaba Cloud/DashScope 등 외부 AI 모델 제공자</strong>가 사용될 수 있으며, 장애 또는 할당량 상황에서 다른 제공자로 전환될 수 있습니다.</p>
+    <p>AI 기능을 사용하는 경우 해당 요청 처리에 필요한 메시지/프롬프트, 대화 문맥, 음성 또는 이미지가 선택된 AI 처리 제공자에게 전송될 수 있습니다. 이용자는 AI 대화에 주민등록번호, 금융정보, 계정 비밀번호 등 불필요한 민감정보를 입력하지 않아야 합니다.</p>
+    <p>Yo의 서버측 장기 AI 메모리는 기본적으로 비활성화하는 privacy-first 구성을 사용하며, 클라이언트는 일부 AI 문맥 요약을 기기 로컬 저장소에 보관할 수 있습니다. 서버 장기 메모리 기능을 별도로 활성화하는 서비스 구성이 적용되는 경우 해당 저장 목적과 보관 정책을 함께 적용합니다.</p>
+  </section>
+
+  <section>
+    <h2>5. 제3자 제공 및 처리 위탁</h2>
+    <p>운영자는 개인정보를 판매하지 않습니다. 다만 다음과 같이 서비스 제공에 필요한 범위에서 외부 사업자가 정보를 처리할 수 있습니다.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>처리 주체</th><th>처리 목적</th><th>처리될 수 있는 정보</th></tr></thead>
+      <tbody>
+        <tr><td>Google LLC (Firebase Cloud Messaging, Firebase Analytics, Firebase Crashlytics 등)</td><td>Android 푸시 알림, 이용 분석, 오류·충돌 진단</td><td>푸시 토큰, 앱/기기 식별정보, 이용 이벤트, 진단·충돌 정보 등</td></tr>
+        <tr><td>Apple Inc. (APNs, PushKit 등)</td><td>iOS 푸시 알림 및 VoIP 수신 알림</td><td>기기 푸시 토큰, 알림 전달에 필요한 정보</td></tr>
+        <tr><td>서비스 구성에 따라 선택되는 AI 모델 제공자</td><td>생성형 AI 추론, 음성/이미지/텍스트 처리</td><td>AI 요청에 필요한 텍스트, 대화 문맥, 음성·이미지 및 요청 메타데이터</td></tr>
+        <tr><td>메시지의 상대방/방 참여자</td><td>이용자가 의도한 커뮤니케이션</td><td>프로필 표시 정보, 메시지, 이용자가 공유한 첨부 미디어</td></tr>
+      </tbody>
+    </table></div>
+    <p>외부 사업자는 각자의 개인정보처리방침과 계약 조건에 따라 정보를 처리할 수 있습니다. 운영자는 서비스 제공 목적에 필요한 범위에서만 정보를 전달하도록 노력합니다.</p>
+  </section>
+
+  <section>
+    <h2>6. 국외 처리 가능성</h2>
+    <p>Google, Apple 및 외부 AI 모델 제공자의 서버가 대한민국 외 지역에 있을 수 있으므로, 해당 기능을 사용하는 경우 개인정보 또는 이용 데이터가 암호화된 네트워크를 통해 국외에서 처리될 수 있습니다. 실제 처리 국가와 제공자는 이용 기능, 운영 구성 및 제공자의 데이터센터 정책에 따라 달라질 수 있습니다.</p>
+    <p>운영자는 국외 처리 대상이 변경되거나 별도의 동의·고지가 필요한 형태로 확대되는 경우 관련 법령에 따라 필요한 조치를 수행하고 본 방침을 갱신합니다.</p>
+  </section>
+
+  <section>
+    <h2>7. 보유 및 이용 기간</h2>
+    <p>운영자는 원칙적으로 처리 목적이 달성되면 개인정보를 삭제하거나 비식별화합니다. 다만 서비스 제공, 보안, 분쟁 대응 또는 관계 법령상 보관 의무가 있는 경우 필요한 기간 동안 보관할 수 있습니다.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>정보</th><th>원칙적 보관 기준</th></tr></thead>
+      <tbody>
+        <tr><td>계정·프로필 정보</td><td>계정 유지 기간. 계정 삭제 요청 처리 시 법령상 보관이 필요한 정보를 제외하고 삭제</td></tr>
+        <tr><td>메시지·첨부 및 대화 상태</td><td>메시지 전달·동기화 및 서비스 제공에 필요한 기간. 사용자의 삭제 또는 계정 삭제 정책에 따라 삭제</td></tr>
+        <tr><td>연락처 동기화 정보</td><td>연락처 친구 찾기 기능 제공에 필요한 기간. 동기화 해제/관련 개인정보 설정 변경 시 저장된 연락처 매칭 스냅샷을 정리할 수 있음</td></tr>
+        <tr><td>푸시 토큰</td><td>해당 토큰이 유효하고 계정과 연결되어 있는 기간. 토큰 갱신, 로그아웃, 연결 해제 또는 계정 삭제 시 정리</td></tr>
+        <tr><td>인증·비밀번호 재설정 정보</td><td>인증 또는 재설정 완료, 유효기간 만료 시까지 또는 보안상 필요한 최소 기간</td></tr>
+        <tr><td>세션·보안 로그</td><td>로그인 세션 유지, 부정 이용 방지, 보안 사고 대응 및 관계 법령상 필요한 기간</td></tr>
+        <tr><td>Firebase 분석·진단 정보</td><td>Firebase 프로젝트의 보관 설정 및 각 서비스 정책에 따른 기간</td></tr>
+        <tr><td>AI 로컬 문맥 요약</td><td>해당 기기 로컬 데이터가 유지되는 동안. 앱 데이터 삭제/재설치 등에 따라 제거될 수 있음</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>8. 개인정보의 삭제 및 파기</h2>
+    <ol>
+      <li>삭제 사유가 발생하면 데이터베이스, 캐시 및 관련 저장소에서 해당 정보를 삭제하거나 재식별이 어렵도록 처리합니다.</li>
+      <li>전자적 파일은 복구가 어렵도록 삭제하고, 백업 데이터는 백업 보존 주기에 따라 순차적으로 만료·삭제될 수 있습니다.</li>
+      <li>보안, 사기 방지, 법적 의무 이행 등 정당한 사유로 일부 정보의 보관이 필요한 경우 해당 목적에 필요한 범위에서만 분리 보관할 수 있습니다.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>9. 이용자의 권리 및 행사 방법</h2>
+    <ul>
+      <li>앱에서 프로필 및 일부 개인정보 설정을 확인·변경할 수 있습니다.</li>
+      <li>운영체제 설정에서 연락처, 위치, 사진/동영상, 카메라, 마이크, 알림 권한을 언제든 철회할 수 있습니다.</li>
+      <li>연락처 기반 친구 찾기 및 관련 개인정보 설정을 지원하는 앱 버전에서는 해당 기능을 끌 수 있습니다.</li>
+      <li>개인정보 열람·정정·삭제 또는 계정 삭제를 요청하려면 <a href="mailto:support@yonode.co">support@yonode.co</a>로 문의할 수 있습니다.</li>
+    </ul>
+    <p>계정 삭제 요청이 처리되면 관계 법령상 보관 의무 또는 보안·분쟁 처리 목적상 필요한 데이터를 제외하고 계정에 연결된 개인정보를 삭제하는 것을 원칙으로 합니다.</p>
+  </section>
+
+  <section>
+    <h2>10. 자동으로 생성·수집될 수 있는 정보</h2>
+    <p>서비스 이용 과정에서 IP 주소, User-Agent, 기기/플랫폼 정보, 앱 버전, 접속 및 요청 시각, 앱 인스턴스 식별정보, 오류·충돌 정보 등이 자동으로 생성 또는 수집될 수 있습니다. Android 앱에는 Firebase Analytics 및 Crashlytics SDK가 포함되어 있어 Firebase 설정에 따라 이용 이벤트와 진단 정보가 Google에 전송될 수 있습니다.</p>
+  </section>
+
+  <section>
+    <h2>11. 개인정보 보호를 위한 기술적·관리적 조치</h2>
+    <ul>
+      <li>배포용 클라이언트와 서버 간 원격 통신에 TLS(HTTPS/WSS) 사용</li>
+      <li>비밀번호 원문이 아닌 안전한 비밀번호 해시를 이용한 인증</li>
+      <li>접근 토큰/세션 기반 인증과 서버측 권한 검증</li>
+      <li>Android의 일부 로컬 데이터베이스에 암호화 저장소를 사용하고, 인증 정보는 플랫폼의 보안 저장 기능을 활용</li>
+      <li>인증정보 및 개인정보가 로그에 불필요하게 기록되지 않도록 제한</li>
+      <li>서비스별 접근 권한 및 계정 범위 분리</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>12. 개인정보 관련 문의</h2>
+    <div class="notice">
+      <strong>Yo 서비스 운영팀</strong><br>
+      개인정보 처리, 권리 행사, 계정 및 데이터 삭제 문의<br>
+      이메일: <a href="mailto:support@yonode.co">support@yonode.co</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>13. 방침 변경</h2>
+    <p>서비스 기능, 적용 법령 또는 외부 처리 사업자가 변경되어 본 방침의 내용이 달라지는 경우 변경된 방침을 웹페이지 또는 앱 내 적절한 방법으로 안내합니다. 중요한 변경이 있는 경우 필요한 추가 고지 또는 동의 절차를 적용합니다.</p>
+  </section>
+
+  <footer>
+    <p>Yo Privacy Policy · Last updated September 2, 2026</p>
+  </footer>
+</main>
+</body>
+</html>
