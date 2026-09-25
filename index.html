@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>제주의 게임 개발사 CACO</title>
-  <meta name="description" content="CACO is a next-generation game studio based on the beautiful island of Jeju. Our beat-driven rhythm action game StreetBoy: Beat Rush is out now on the App Store and Google Play.">
-  <meta name="keywords" content="CACO, 카코, 제주 게임 개발사, 제주의 게임 개발사, 게임 개발사, StreetBoy, StreetBoy: Beat Rush, 스트리트보이, 스트리트 보이, 비트 러시, 리듬 액션 게임, rhythm action game, beat action, 인디 게임, App Store, Google Play, Jeju game studio">
+  <meta name="description" content="CACO is a next-generation game studio based on the beautiful island of Jeju.">
+  <meta name="keywords" content="CACO, 카코, 제주 게임 개발사, 제주의 게임 개발사, 게임 개발사, Street Boy, 스트리트 보이, 리듬 액션 게임, 인디 게임, Jeju game studio">
   <meta name="author" content="CACO">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://caco.fun/">
@@ -13,72 +13,27 @@
   <meta property="og:site_name" content="CACO">
   <meta property="og:locale" content="ko_KR">
   <meta property="og:title" content="제주의 게임 개발사 CACO">
-  <meta property="og:description" content="StreetBoy: Beat Rush is out now. Tap, jump, and hit to the beat in CACO's new rhythm action game for iPhone and Android.">
+  <meta property="og:description" content="CACO is a next-generation game studio based on the beautiful island of Jeju.">
   <meta property="og:url" content="https://caco.fun/">
-  <meta property="og:image" content="https://caco.fun/assets/streetboy/og-image.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="StreetBoy: Beat Rush gameplay: Lock in combos and aim for FEVER!">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="제주의 게임 개발사 CACO">
-  <meta name="twitter:description" content="StreetBoy: Beat Rush is out now. Tap, jump, and hit to the beat in CACO's new rhythm action game for iPhone and Android.">
-  <meta name="twitter:image" content="https://caco.fun/assets/streetboy/og-image.jpg">
+  <meta name="twitter:description" content="CACO is a next-generation game studio based on the beautiful island of Jeju.">
   <link rel="icon" href="caco.ico">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://caco.fun/#organization",
-          "name": "CACO",
-          "legalName": "CACO Inc.",
-          "url": "https://caco.fun/",
-          "email": "travis@caco.fun",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "139, Hwasambuk-ro",
-            "addressLocality": "Jeju-si",
-            "addressRegion": "Jeju-do",
-            "addressCountry": "KR"
-          },
-          "description": "CACO is a next-generation game studio based on the beautiful island of Jeju."
-        },
-        {
-          "@type": ["VideoGame", "MobileApplication"],
-          "@id": "https://caco.fun/#streetboy-beat-rush",
-          "name": "StreetBoy: Beat Rush",
-          "alternateName": "StreetBoy",
-          "url": "https://caco.fun/#streetboy-beat-rush",
-          "description": "StreetBoy is a beat-driven rhythm action game with stylish urban visuals and energetic music. Tap, jump, and hit to the beat, defeat rhythm monsters, keep your combos alive, and clear each stage with perfect timing.",
-          "image": "https://caco.fun/assets/streetboy/app-icon.png",
-          "screenshot": [
-            "https://caco.fun/assets/streetboy/screenshot-combo-fever.webp",
-            "https://caco.fun/assets/streetboy/screenshot-soar-high.webp",
-            "https://caco.fun/assets/streetboy/screenshot-smash-the-stage.webp",
-            "https://caco.fun/assets/streetboy/screenshot-creator-lineup.webp"
-          ],
-          "genre": ["Rhythm", "Action", "Music"],
-          "gamePlatform": ["iOS", "Android"],
-          "operatingSystem": "iOS 13.0 or later, Android",
-          "applicationCategory": "GameApplication",
-          "applicationSubCategory": "Rhythm action",
-          "inLanguage": ["en", "ja", "ko"],
-          "contentRating": "4+",
-          "author": { "@id": "https://caco.fun/#organization" },
-          "publisher": { "@id": "https://caco.fun/#organization" },
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock"
-          },
-          "sameAs": [
-            "https://apps.apple.com/app/streetboy-beat-rush/id6786275464",
-            "https://play.google.com/store/apps/details?id=com.caco.streetboy"
-          ]
-        }
-      ]
+      "@type": "Organization",
+      "name": "CACO",
+      "url": "https://caco.fun/",
+      "email": "travis@caco.fun",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "139, Hwasambuk-ro",
+        "addressLocality": "Jeju-si",
+        "addressRegion": "Jeju-do",
+        "addressCountry": "KR"
+      },
+      "description": "CACO is a next-generation game studio based on the beautiful island of Jeju."
     }
   </script>
   <style>
@@ -271,7 +226,7 @@
     .intro-shell {
       position: absolute;
       left: 50%;
-      bottom: clamp(116px, 15vh, 176px);
+      bottom: clamp(108px, 14vh, 168px);
       width: min(72vw, 980px);
       padding: 1.1rem 1.25rem;
       border: 1px solid rgba(141, 247, 163, 0.18);
@@ -334,11 +289,11 @@
     }
 
     .site-footer {
-      position: relative;
+      position: absolute;
+      left: 50%;
+      bottom: clamp(20px, 3.6vh, 40px);
+      width: min(84vw, 1080px);
       margin: 0;
-      padding: clamp(28px, 4vw, 44px) 24px clamp(32px, 5vw, 52px);
-      border-top: 1px solid rgba(141, 247, 163, 0.12);
-      background: #020803;
       color: rgba(194, 255, 204, 0.78);
       font-family: "Minecraft", "Iosevka", "Menlo", "Consolas", monospace;
       font-size: clamp(11px, 0.95vw, 16px);
@@ -348,363 +303,16 @@
       text-shadow:
         0 0 3px rgba(141, 247, 163, 0.28),
         0 0 10px rgba(89, 255, 120, 0.12);
+      transform: translateX(-50%);
+      z-index: 4;
+      opacity: 0.9;
+      animation: flicker 120ms steps(2) infinite;
+      pointer-events: none;
+      user-select: none;
     }
 
     .site-footer p {
       margin: 0;
-    }
-
-    .site-footer a {
-      color: inherit;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(141, 247, 163, 0.24);
-      transition: color 120ms ease, border-color 120ms ease;
-    }
-
-    .site-footer a:hover,
-    .site-footer a:focus-visible {
-      color: #effff2;
-      border-color: rgba(239, 255, 242, 0.7);
-      outline: none;
-    }
-
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.4em 1.6em;
-      margin-bottom: 0.9em !important;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-    }
-
-    .hero-actions {
-      position: absolute;
-      left: 50%;
-      bottom: clamp(16px, 3vh, 34px);
-      width: min(84vw, 1080px);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: clamp(10px, 1.6vh, 16px);
-      transform: translateX(-50%);
-      z-index: 5;
-    }
-
-    .store-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: clamp(10px, 1.4vw, 18px);
-    }
-
-    .store-button {
-      position: relative;
-      display: inline-flex;
-      flex-direction: column;
-      justify-content: center;
-      min-width: 12.5em;
-      padding: 0.6em 1.2em 0.62em 2.5em;
-      border: 1px solid rgba(141, 247, 163, 0.5);
-      background: linear-gradient(180deg, rgba(24, 72, 33, 0.78), rgba(6, 22, 9, 0.78));
-      color: #d7ffde;
-      font-family: "Minecraft", "Iosevka", "Menlo", "Consolas", monospace;
-      font-size: clamp(13px, 1.05vw, 17px);
-      line-height: 1.3;
-      letter-spacing: 0.12em;
-      text-align: left;
-      text-decoration: none;
-      text-transform: uppercase;
-      text-shadow:
-        0 0 3px rgba(141, 247, 163, 0.42),
-        0 0 10px rgba(89, 255, 120, 0.18);
-      box-shadow:
-        inset 0 0 16px rgba(141, 247, 163, 0.08),
-        0 0 16px rgba(89, 255, 120, 0.12);
-      transition: background 120ms ease, color 120ms ease, box-shadow 120ms ease, transform 120ms ease;
-    }
-
-    .store-button::before {
-      content: "\25B6";
-      position: absolute;
-      top: 50%;
-      left: 1em;
-      font-family: "Menlo", "Consolas", monospace;
-      font-size: 0.72em;
-      transform: translateY(-50%);
-    }
-
-    .store-button small {
-      display: block;
-      margin-bottom: 0.2em;
-      font-size: 0.62em;
-      letter-spacing: 0.18em;
-      opacity: 0.74;
-    }
-
-    .store-button:hover,
-    .store-button:focus-visible {
-      background: #8df7a3;
-      color: #031006;
-      text-shadow: none;
-      box-shadow:
-        0 0 0 1px rgba(196, 255, 209, 0.9),
-        0 0 24px rgba(141, 247, 163, 0.45);
-      transform: translateY(-1px);
-      outline: none;
-    }
-
-    .scroll-cue {
-      color: rgba(194, 255, 204, 0.72);
-      font-family: "Minecraft", "Iosevka", "Menlo", "Consolas", monospace;
-      font-size: clamp(10px, 0.82vw, 13px);
-      letter-spacing: 0.2em;
-      text-decoration: none;
-      text-transform: uppercase;
-      text-shadow: 0 0 6px rgba(89, 255, 120, 0.2);
-      animation: cue-bob 2.4s ease-in-out infinite;
-    }
-
-    .scroll-cue:hover,
-    .scroll-cue:focus-visible {
-      color: #effff2;
-      outline: none;
-    }
-
-    .release {
-      position: relative;
-      padding: clamp(72px, 9vw, 128px) clamp(20px, 5vw, 64px) clamp(64px, 8vw, 104px);
-      border-top: 1px solid rgba(141, 247, 163, 0.14);
-      background:
-        radial-gradient(circle at 50% 0%, rgba(49, 255, 110, 0.1), transparent 42%),
-        linear-gradient(180deg, var(--glass-bottom) 0%, #020803 100%);
-      color: #d7ffde;
-      font-family: "Minecraft", "Iosevka", "Menlo", "Consolas", monospace;
-      overflow: hidden;
-      scroll-margin-top: 0;
-    }
-
-    .release::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: repeating-linear-gradient(
-        180deg,
-        rgba(150, 255, 168, 0.05) 0 1px,
-        rgba(0, 0, 0, 0.08) 1px 3px
-      );
-      opacity: 0.5;
-      pointer-events: none;
-    }
-
-    .release-inner {
-      position: relative;
-      z-index: 1;
-      max-width: 1180px;
-      margin: 0 auto;
-    }
-
-    .release-head {
-      display: flex;
-      align-items: center;
-      gap: clamp(18px, 3vw, 36px);
-      margin-bottom: clamp(32px, 5vw, 60px);
-    }
-
-    .app-icon {
-      flex: none;
-      width: clamp(84px, 10vw, 128px);
-      height: auto;
-      aspect-ratio: 1;
-      border: 2px solid rgba(141, 247, 163, 0.45);
-      border-radius: 22%;
-      box-shadow:
-        0 0 0 6px rgba(141, 247, 163, 0.06),
-        0 0 28px rgba(89, 255, 120, 0.22);
-    }
-
-    .release-kicker {
-      margin: 0 0 0.7em;
-      color: var(--phosphor);
-      font-size: clamp(11px, 0.95vw, 14px);
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-    }
-
-    .status-dot {
-      display: inline-block;
-      width: 0.62em;
-      height: 0.62em;
-      margin-right: 0.7em;
-      background: var(--phosphor);
-      box-shadow: 0 0 10px var(--phosphor-glow);
-      animation: blink 1.4s steps(1) infinite;
-    }
-
-    .release h2 {
-      margin: 0;
-      color: #effff2;
-      font-size: clamp(30px, 5.2vw, 68px);
-      font-weight: normal;
-      line-height: 1.05;
-      letter-spacing: 0.02em;
-      text-shadow:
-        0 0 6px rgba(141, 247, 163, 0.55),
-        0 0 22px rgba(89, 255, 120, 0.25);
-    }
-
-    .release-tagline {
-      margin: 0.8em 0 0;
-      color: rgba(203, 255, 212, 0.82);
-      font-size: clamp(14px, 1.3vw, 19px);
-      letter-spacing: 0.04em;
-    }
-
-    .release-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
-      gap: clamp(28px, 4vw, 56px);
-      align-items: start;
-      margin-bottom: clamp(48px, 6vw, 80px);
-    }
-
-    .release-copy p {
-      margin: 0 0 1.1em;
-      color: rgba(215, 255, 222, 0.9);
-      font-size: clamp(14px, 1.2vw, 18px);
-      line-height: 1.8;
-    }
-
-    .feature-list {
-      display: grid;
-      gap: 0.6em;
-      margin: 1.8em 0 0;
-      padding: 0;
-      list-style: none;
-      color: #c2ffcc;
-      font-size: clamp(13px, 1.1vw, 16px);
-      letter-spacing: 0.04em;
-    }
-
-    .feature-list li {
-      position: relative;
-      padding-left: 1.7em;
-    }
-
-    .feature-list li::before {
-      content: "";
-      position: absolute;
-      top: 0.36em;
-      left: 0.1em;
-      width: 0.6em;
-      height: 0.6em;
-      background: var(--phosphor);
-      box-shadow: 0 0 8px var(--phosphor-glow);
-    }
-
-    .release-panel {
-      padding: clamp(20px, 2.4vw, 30px);
-      border: 1px solid rgba(141, 247, 163, 0.22);
-      background:
-        linear-gradient(180deg, rgba(18, 54, 25, 0.55), rgba(4, 16, 6, 0.3)),
-        rgba(0, 0, 0, 0.2);
-      box-shadow:
-        inset 0 0 24px rgba(141, 247, 163, 0.05),
-        0 0 18px rgba(89, 255, 120, 0.07);
-    }
-
-    .panel-prompt {
-      margin: 0 0 1.2em;
-      color: #c2ffcc;
-      font-size: clamp(12px, 1vw, 15px);
-      letter-spacing: 0.03em;
-      word-break: break-all;
-    }
-
-    .release-panel .store-links {
-      flex-direction: column;
-      align-items: stretch;
-    }
-
-    .spec-list {
-      display: grid;
-      grid-template-columns: auto minmax(0, 1fr);
-      gap: 0.7em 1.4em;
-      margin: 1.6em 0 0;
-      padding-top: 1.4em;
-      border-top: 1px dashed rgba(141, 247, 163, 0.22);
-      font-size: clamp(12px, 0.95vw, 14px);
-      line-height: 1.5;
-    }
-
-    .spec-list dt {
-      color: rgba(141, 247, 163, 0.72);
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-    }
-
-    .spec-list dd {
-      margin: 0;
-      color: rgba(215, 255, 222, 0.92);
-    }
-
-    .section-label {
-      margin: 0 0 1.1em;
-      color: var(--phosphor);
-      font-size: clamp(12px, 1vw, 15px);
-      font-weight: normal;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: clamp(14px, 2vw, 24px);
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .shot {
-      position: relative;
-      margin: 0;
-      padding: 6px;
-      border: 1px solid rgba(141, 247, 163, 0.28);
-      background: rgba(0, 0, 0, 0.35);
-      box-shadow: 0 0 20px rgba(89, 255, 120, 0.08);
-    }
-
-    .shot img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
-    .shot::after {
-      content: "";
-      position: absolute;
-      inset: 6px;
-      background: repeating-linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.04) 0 1px,
-        rgba(0, 0, 0, 0.1) 1px 3px
-      );
-      pointer-events: none;
-    }
-
-    @media (max-width: 860px) {
-      .release-grid,
-      .gallery {
-        grid-template-columns: minmax(0, 1fr);
-      }
-    }
-
-    @media (max-width: 560px) {
-      .release-head {
-        flex-direction: column;
-        align-items: flex-start;
-      }
     }
 
     @media (max-width: 720px) {
@@ -713,25 +321,8 @@
         bottom: clamp(132px, 24vh, 220px);
       }
 
-      .hero-actions {
-        width: min(92vw, 1080px);
-        bottom: max(14px, calc((clamp(132px, 24vh, 220px) - 92px) / 2));
-      }
-
-      .store-button {
-        flex: 1 1 0;
-        min-width: 0;
-        padding: 0.66em 0.7em 0.68em 2em;
-        font-size: clamp(10px, 2.9vw, 13px);
-        letter-spacing: 0.06em;
-        white-space: nowrap;
-      }
-
-      .release-panel .store-button {
-        flex: none;
-      }
-
       .site-footer {
+        width: min(88vw, 1080px);
         font-size: clamp(10px, 2.8vw, 14px);
       }
     }
@@ -756,117 +347,35 @@
       0% { transform: translateY(-110%); }
       100% { transform: translateY(110%); }
     }
-
-    @keyframes cue-bob {
-      0%, 100% { transform: translateY(0); opacity: 0.72; }
-      50% { transform: translateY(3px); opacity: 1; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .scroll-cue,
-      .status-dot {
-        animation: none;
-      }
-    }
   </style>
 </head>
 <body>
-  <main>
-    <div class="crt">
-      <nav class="corner-menu" aria-label="Primary">
-        <a href="#streetboy-beat-rush">Game</a>
-        <a href="/contact/index.html">Contact</a>
-      </nav>
-      <div id="stage-track" class="stage-track">
-        <section class="stage">
-          <pre id="title" class="ascii-art title" role="img" aria-label="StreetBoy title logo in ASCII art"></pre>
-          <pre id="character" class="ascii-art character" role="img" aria-label="ASCII animation of StreetBoy dancing"></pre>
-        </section>
-      </div>
-      <div id="intro-shell" class="intro-shell" aria-label="Game introduction">
-        <pre id="intro" class="intro"><span id="intro-text"></span><span class="intro-cursor">█</span></pre>
-      </div>
-      <div class="hero-actions">
-        <div class="store-links">
-          <a class="store-button" href="https://apps.apple.com/app/streetboy-beat-rush/id6786275464" target="_blank" rel="noopener"><small>Download on the</small>App Store</a>
-          <a class="store-button" href="https://play.google.com/store/apps/details?id=com.caco.streetboy" target="_blank" rel="noopener"><small>Get it on</small>Google Play</a>
-        </div>
-        <a class="scroll-cue" href="#streetboy-beat-rush">&#9660; Explore StreetBoy: Beat Rush</a>
-      </div>
-    </div>
-
-    <section id="streetboy-beat-rush" class="release" aria-labelledby="release-title">
-      <div class="release-inner">
-        <header class="release-head">
-          <img class="app-icon" src="assets/streetboy/app-icon.png" width="128" height="128" alt="StreetBoy: Beat Rush app icon">
-          <div>
-            <p class="release-kicker"><span class="status-dot" aria-hidden="true"></span>Out now &middot; iPhone &amp; Android</p>
-            <h2 id="release-title">StreetBoy: Beat Rush</h2>
-            <p class="release-tagline">Rhythm game? Nah. This is beat action.</p>
-          </div>
-        </header>
-
-        <div class="release-grid">
-          <div class="release-copy">
-            <p>StreetBoy is a beat-driven rhythm action game with stylish urban visuals and energetic music. Move through colorful city stages, follow the rhythm, and time your actions to the beat.</p>
-            <p>Tap, jump, and hit &mdash; every move connects with the music. Defeat rhythm monsters, keep your combos alive, and clear each stage with perfect timing.</p>
-            <ul class="feature-list">
-              <li>Beat-driven rhythm action</li>
-              <li>Stylish city stages</li>
-              <li>Graffiti-inspired visuals</li>
-              <li>Unique characters</li>
-              <li>Simple controls with deep timing-based gameplay</li>
-            </ul>
-          </div>
-
-          <aside class="release-panel" aria-label="Download StreetBoy: Beat Rush">
-            <p class="panel-prompt">streetboy@neoretro:~ ./download --now</p>
-            <div class="store-links">
-              <a class="store-button" href="https://apps.apple.com/app/streetboy-beat-rush/id6786275464" target="_blank" rel="noopener"><small>Download on the</small>App Store</a>
-              <a class="store-button" href="https://play.google.com/store/apps/details?id=com.caco.streetboy" target="_blank" rel="noopener"><small>Get it on</small>Google Play</a>
-            </div>
-            <dl class="spec-list">
-              <dt>Price</dt>
-              <dd>Free &middot; In-app purchases</dd>
-              <dt>Genre</dt>
-              <dd>Rhythm action &middot; Music</dd>
-              <dt>Rating</dt>
-              <dd>4+ / Everyone</dd>
-              <dt>Platform</dt>
-              <dd>iPhone (iOS 13.0+) &middot; Android</dd>
-              <dt>Language</dt>
-              <dd>English &middot; Japanese &middot; Korean</dd>
-            </dl>
-          </aside>
-        </div>
-
-        <h3 class="section-label">&gt; Screenshots</h3>
-        <ul class="gallery">
-          <li class="shot"><img src="assets/streetboy/screenshot-combo-fever.webp" width="1400" height="648" loading="lazy" decoding="async" alt="StreetBoy points forward as rhythm monsters charge in: Lock in combos and aim for FEVER!"></li>
-          <li class="shot"><img src="assets/streetboy/screenshot-soar-high.webp" width="1400" height="648" loading="lazy" decoding="async" alt="StreetBoy leaps through a circus stage mid-combo: Hit the beat and soar high!"></li>
-          <li class="shot"><img src="assets/streetboy/screenshot-smash-the-stage.webp" width="1400" height="648" loading="lazy" decoding="async" alt="StreetBoy flexes in front of a desert pyramid stage: Ride the beat and smash the stage!"></li>
-          <li class="shot"><img src="assets/streetboy/screenshot-creator-lineup.webp" width="1400" height="648" loading="lazy" decoding="async" alt="Record-style stage select with the BeatPass: Experience the beat of an all-star creator lineup!"></li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" aria-label="Contact information">
-    <p class="footer-links">
+  <main class="crt">
+    <nav class="corner-menu" aria-label="Primary">
       <a href="/contact/index.html">Contact</a>
-      <a href="/privacy_policy/PrivacyPolicy.txt">Privacy Policy</a>
-    </p>
-    <p><a href="mailto:travis@caco.fun">travis@caco.fun</a></p>
-    <p>139, Hwasambuk-ro, Jeju-si, Jeju-do, Republic of Korea</p>
-    <p>&copy;CACO All rights reserved.</p>
-  </footer>
+    </nav>
+    <div id="stage-track" class="stage-track">
+      <section class="stage">
+        <pre id="title" class="ascii-art title" aria-label="sb_UI_title_title.png Symbol Title"></pre>
+        <pre id="character" class="ascii-art character" aria-label="ASCII character animation"></pre>
+      </section>
+    </div>
+    <div id="intro-shell" class="intro-shell" aria-label="Game introduction">
+      <pre id="intro" class="intro"><span id="intro-text"></span><span class="intro-cursor">█</span></pre>
+    </div>
+    <footer class="site-footer" aria-label="Contact information">
+      <p>travis@caco.fun</p>
+      <p>139, Hwasambuk-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+      <p>&copy;CACO All rights reserved.</p>
+    </footer>
+  </main>
 
   <script>
     const groups = [".,`'", ":;-~", "/|\\()", "_=+*", "ox%#", "@$&"];
     const levels = [[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 2, 0, 0, 0, 0, 0, 5, 6, 4, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 3, 5, 6, 6, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 5, 6, 6, 6, 6, 3, 0, 0, 0, 1, 1, 1, 0, 0, 5, 6, 6, 3, 0, 0, 0, 2, 6, 6, 5, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 4, 6, 6, 6, 6, 6, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 5, 4, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0, 0, 0, 0, 1, 3, 5, 6, 6, 6, 4, 3, 6, 6, 6, 0, 2, 6, 6, 6, 6, 6, 5, 5, 6, 6, 4, 0, 0, 0, 4, 6, 6, 4, 0, 0, 0, 0, 0], [0, 0, 0, 0, 4, 6, 6, 5, 6, 6, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 4, 6, 6, 6, 6, 6, 4, 4, 6, 6, 6, 6, 5, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 4, 5, 6, 6, 6, 3, 0, 0, 0, 2, 6, 6, 6, 4, 2, 0, 0, 4, 6, 6, 2, 2, 6, 6, 6, 3, 2, 4, 6, 6, 6, 6, 3, 0, 0, 0, 6, 6, 6, 2, 0, 0, 0, 0, 0], [0, 0, 0, 4, 6, 6, 5, 4, 6, 6, 4, 0, 0, 0, 0, 0, 1, 3, 4, 6, 6, 6, 6, 6, 6, 6, 5, 6, 6, 6, 5, 3, 3, 6, 6, 6, 3, 3, 2, 1, 0, 0, 0, 0, 2, 5, 6, 6, 6, 4, 1, 0, 0, 0, 0, 1, 4, 6, 6, 6, 6, 6, 5, 3, 1, 0, 0, 2, 6, 6, 6, 3, 0, 0, 2, 6, 6, 6, 4, 1, 6, 6, 5, 1, 0, 0, 0, 2, 6, 6, 6, 2, 0, 0, 2, 6, 6, 6, 1, 0, 0, 0, 0, 0], [0, 0, 3, 6, 6, 5, 2, 6, 6, 6, 0, 0, 1, 3, 4, 6, 6, 6, 6, 6, 6, 4, 2, 0, 5, 6, 6, 6, 3, 0, 0, 0, 3, 6, 6, 6, 6, 6, 6, 6, 4, 0, 0, 4, 6, 6, 4, 4, 6, 6, 3, 0, 2, 3, 5, 6, 6, 6, 6, 4, 2, 1, 0, 0, 0, 0, 0, 6, 6, 6, 6, 2, 1, 4, 6, 6, 6, 6, 6, 6, 6, 6, 1, 0, 0, 0, 0, 0, 6, 6, 6, 1, 0, 0, 5, 6, 6, 5, 0, 0, 0, 0, 0, 0], [0, 1, 6, 6, 6, 1, 1, 5, 6, 4, 4, 6, 6, 6, 6, 4, 3, 1, 6, 6, 6, 0, 0, 0, 6, 6, 6, 1, 0, 0, 3, 6, 6, 6, 6, 6, 3, 1, 3, 6, 6, 2, 2, 6, 6, 4, 1, 5, 6, 6, 5, 5, 6, 6, 6, 6, 6, 6, 3, 0, 0, 0, 0, 0, 0, 0, 1, 6, 6, 6, 6, 6, 6, 6, 6, 5, 4, 3, 3, 6, 6, 6, 1, 0, 0, 0, 0, 1, 6, 6, 6, 1, 0, 2, 6, 6, 6, 3, 0, 0, 0, 0, 0, 0], [0, 5, 6, 6, 2, 0, 0, 1, 6, 6, 6, 4, 3, 3, 3, 3, 3, 4, 6, 6, 5, 0, 0, 1, 6, 6, 5, 2, 4, 6, 6, 5, 2, 5, 6, 5, 0, 0, 4, 6, 6, 5, 6, 6, 6, 5, 6, 6, 6, 6, 6, 6, 6, 5, 1, 5, 6, 6, 3, 0, 0, 0, 0, 0, 0, 0, 0, 5, 6, 6, 6, 6, 5, 3, 1, 0, 0, 0, 2, 6, 6, 6, 3, 0, 0, 0, 0, 2, 6, 6, 6, 1, 1, 6, 6, 6, 6, 1, 0, 1, 1, 0, 0, 0], [2, 6, 6, 5, 0, 0, 0, 3, 6, 6, 5, 5, 6, 6, 6, 5, 6, 6, 6, 6, 6, 1, 0, 0, 6, 6, 6, 6, 6, 5, 1, 0, 1, 6, 6, 5, 4, 5, 6, 5, 3, 6, 6, 6, 6, 6, 3, 1, 1, 1, 2, 6, 6, 5, 0, 4, 6, 6, 3, 0, 0, 0, 0, 3, 4, 1, 0, 1, 6, 6, 6, 4, 0, 0, 0, 0, 0, 0, 2, 6, 6, 6, 1, 0, 0, 0, 0, 5, 6, 6, 6, 5, 5, 6, 6, 6, 5, 1, 4, 5, 5, 4, 4, 1], [5, 6, 6, 3, 1, 2, 4, 6, 6, 6, 6, 5, 3, 1, 0, 2, 6, 6, 6, 6, 6, 1, 0, 0, 6, 6, 6, 6, 6, 6, 5, 2, 3, 6, 6, 6, 6, 5, 3, 0, 0, 5, 6, 6, 4, 0, 0, 0, 0, 1, 6, 6, 5, 1, 0, 3, 6, 6, 4, 0, 0, 0, 1, 6, 6, 6, 1, 0, 2, 6, 6, 6, 2, 0, 0, 0, 0, 1, 5, 6, 6, 6, 3, 2, 1, 2, 5, 6, 6, 5, 6, 6, 6, 6, 6, 6, 5, 5, 6, 4, 5, 5, 1, 6], [4, 6, 6, 6, 6, 6, 6, 6, 6, 6, 5, 0, 0, 0, 4, 6, 6, 4, 4, 6, 6, 3, 0, 0, 5, 6, 6, 6, 2, 4, 6, 6, 6, 6, 5, 0, 0, 0, 0, 2, 6, 6, 6, 6, 3, 0, 0, 0, 2, 6, 6, 5, 1, 0, 0, 2, 6, 6, 5, 0, 0, 0, 0, 3, 6, 6, 6, 4, 1, 3, 6, 6, 3, 0, 0, 1, 4, 6, 6, 6, 5, 6, 6, 6, 6, 6, 6, 5, 2, 0, 1, 2, 2, 5, 6, 6, 6, 4, 5, 5, 6, 2, 2, 5], [0, 2, 3, 4, 6, 4, 1, 0, 4, 6, 6, 3, 4, 6, 6, 6, 3, 0, 1, 6, 6, 6, 1, 0, 2, 6, 6, 6, 3, 0, 1, 4, 6, 6, 6, 4, 0, 1, 4, 6, 6, 5, 6, 6, 5, 1, 1, 4, 6, 6, 4, 0, 0, 0, 0, 1, 6, 6, 6, 1, 0, 0, 0, 0, 1, 4, 6, 6, 6, 5, 5, 5, 3, 4, 6, 6, 6, 6, 4, 1, 0, 0, 1, 1, 2, 1, 1, 0, 0, 0, 0, 0, 0, 5, 6, 6, 2, 4, 5, 3, 3, 4, 4, 1], [0, 0, 0, 0, 6, 1, 0, 0, 0, 4, 6, 6, 6, 6, 3, 1, 0, 0, 0, 4, 6, 6, 6, 2, 0, 5, 6, 6, 5, 0, 0, 0, 4, 6, 6, 6, 5, 6, 6, 5, 2, 0, 2, 6, 6, 6, 6, 6, 6, 3, 0, 0, 0, 0, 0, 0, 3, 6, 6, 1, 0, 0, 0, 0, 0, 0, 1, 3, 4, 6, 6, 6, 6, 6, 6, 4, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6, 6, 6, 1, 0, 1, 2, 2, 1, 0, 0], [0, 0, 0, 3, 6, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 5, 6, 6, 2, 0, 0, 3, 6, 4, 0, 0, 0, 0, 3, 6, 6, 6, 5, 3, 0, 0, 0, 0, 0, 2, 3, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 4, 5, 5, 5, 4, 3, 2, 1, 0, 0, 0, 1, 6, 6, 6, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 5, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 4, 5, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5, 6, 6, 6, 6, 6, 6, 6, 5, 3, 1, 2, 6, 6, 5, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 6, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 3, 5, 6, 6, 6, 5, 6, 6, 5, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 5, 6, 6, 6, 6, 5, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 2, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 4, 6, 6, 4, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 3, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 6, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 2, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
     const frames = ["                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                &%&&#&&&=         %#%%%*                        \n                           =##%%%%&&%%%%%%%%#%%*&%%&**&#&                       \n                          %#%****************&&%#%****+%%                       \n                         &#****************************%&                       \n                        :#&****************************#-                       \n                        +#****************************#&                        \n                        =#&**************************%#                         \n                        ,&#*************************&#:                         \n                     ..,::&#****&&*****************&#&&*                        \n                           %#&***%****************&&..:+&&                      \n                          %%%$#*+*%**************%$+-:,,-%*                     \n                     %#%%$&-::=%%*&%***********&#%+%#%%#&&                      \n               .,,::&%*+&%,,,,,,#$#&**********%%*                               \n                ..,,*%**&%,,,,,:#&&*********%%&      %%$@%%%%%#%#%              \n                   ,,%##%$&=--+%&********&%$%&%%%%%%%%&&%&&&&$=:-+%*            \n                          &%#%&*********%#&******+*++******+%&,,,,-#            \n                          =#&********&**%#&%&%&&&&&&********#=,,,,-#            \n                          +$&*******%&&&&#.   &#%#%#%%%%%%%%$*-:-+%&            \n                           %$%&&**&%&+**#%                   %###%              \n            #%%         %%%&+*&%%%#%%%%%%%#%                                    \n          +#**=+*%%  %#%%*++++*****&&&&&++*#                                    \n          %+,-   .-*#&*++++*&%+====--*%%&*%%                                    \n          %--,     ,#++++*%$*-:        .-#&                                     \n         .%,=.     .&&*&%%+-&-:-   .:,,:=%*                                     \n       ,,-%.+  ,-,   &#%  .,:%=:=. :*-*#%                                       \n      .,,+&.= -*===:.+%      ,&+,=.,=-+#                                        \n    .,:::&+:- :-+%##&%         %*,=. .:#                                        \n         #--,  =%%              &*,=, *%                                        \n         %%&==&%                 &%+&*%                                         \n           %%$                     $%                                           \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                &%%%%&%%&       &%%%%%%&                        \n                            %##%%%&&&&%%%%%%%%##%&*****#%                       \n                          &#%&***************%%*******+&#                       \n                         *#&*****************&****&%%*+%%                       \n                         #&+*********************%$&+**#+                       \n                        -#*********************%&,-#*+%%                        \n                         #%*******************%+  :#+&#=                        \n                         &#******************%-   +#*#+                         \n                          &#&***%&**********%,    -*%#*                         \n                           %#%***%*********$%=:,.    ,=&%                       \n                     ##$$%&%###&+&%*******#@@@$%%%&++==*%                       \n                    ##%%-,,:=#&#%&&&*****&@@@#**%#& $%#&                        \n                    #&$-,,,,,+$%%##&*****#$#&*%#%                               \n                    %%#+,,,,,&%**********$**%#%                                 \n                     %#$&++*#$%&*********%%#%&@%%%    ,::::::::::::::::,        \n                         @@###&*********%#$#*+*##%%+.,:::,,,:::::::::::::       \n                          -#&***&%&&&***%$%:,,,,*%&%::::-::--::-:---:::::       \n          +%%%%$          +$&**&%***&&%**@=,,,,,:$&#:::::---:::::::,,..         \n          #-=:,-*%%       #$###%****++%&%$#-,,,:&#%=:::::::::::,,,,             \n         &&.=    ,+##%%%%%&*+*&%%%%%%%##%+%$&&&#$#=:::::::::,:,                 \n        -#,=,     .#***+++++++***&&%%#$%*&%#&%%                                 \n        %+,=      :#+++++**&%%#%#%%&%*:-=-,  -#                                 \n       *#.+..:=-   +#&%%%%%%      +%-      .,#&                                 \n       #-:- +==++:.=#            +%:      :+=+&#+                               \n      &%.=  ,=&###&%+            %&::,..   :+---%&                              \n      *#&-,-+%%                  &%*=---:::,,.  ,#+                             \n        #%##&                      $#&&&*+=--:::-%+                             \n                                         &%%&***%%                              \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                           +%#%%%%%%%%%%%#&+   &%%%%%%&+                        \n                          ##%&**********&&&%%##%&*****&#+                       \n                         #%*****************&%*********#*                       \n                        &#***********************&%%&**#=                       \n                        #&*********************&%%%+**%%                        \n                        #%+*******************%*,,#*+&#                         \n                        *#******************&%-  :#+&#+                         \n                         %#****&***********%*.   &%&#+                          \n                    %$#$$ %#***&&*********%+     -+#%=                          \n                   #&+=+&#%*#&**%********%@#&+-,.   :+%*                        \n                  #*,,,,,+$#&%%&*%******%@@@@%&##**+==%&                        \n                  #=,,,,,-$*$%%##%*****&@@$%**%%*  ##%                          \n                  %#=:,:=%&+&*&&###&***##&**%#&                                 \n                 +%##%%##&*************#*&%#%                                   \n              &&*+==&#*&%%%%##%%%%*****#$$%%%%%%                                \n          %%&*+---:,.=$   &#%*********#%**&##%##%-:::,,.         .              \n       %%*+--:::.    .#* %#****%&&&*&#-,,,,-#&**#*:::::::::::::::,              \n      %%-:::,,        && %#***%&**&&#%,,,,,,%&+*#+:::::::::,,,                  \n      %%:.  -=+=:   .-#* &$##%&***++*$+,,,,+$&%#+::--=::::,,                    \n       %&+=-*+++.  :%&%##%**&%%%%%%%#$$%&&%$##$  &%&++##                        \n          @$##%#. :#*++*+++++*%&*****&&%#$ &%# %%*,  -:%&                       \n               %&&##&++++*&%####%&*+++++*&#*:+%*+-= ,=,#+                       \n                    ##%%%%%%     %%%%&*+++#-  .=+=: +.&%                        \n                                     %%%&**#.  .,  -:-#                         \n                                        %%%#.     .+.#+                         \n                                          *#:     =,*%                          \n                                           &#*-. ,-:#,                          \n                                              $%*&*#&                           \n                                                 %%                             \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                              &%%%%%%&+           %&%&                          \n                           %##%%%&&&%%%%%#%&%&&%%%&&&%%&                        \n                         *#%***************&&##&***+***#*                       \n                        +#&+****************&&*****%&**#+                       \n                        %%+**********************%#&**&#,                       \n                        #&*********************%**%+**#&                        \n                        %#+******************&%- ,#**%%                         \n                        =#&*****************%*.  -#+%#,                         \n                         &#&***%***********%-    %#%#.                          \n                    ##%## +#%**&%*********#+.    .:*&&+                         \n                  &#+:::=#$*%#*+%&*******$@@$%*=-,. .-%&                        \n                  $+,,,,,-$%#&#%*%******#@@@#&&##%%&**%*                        \n                  #*,,,,,+#*#%%#$#&****&@$#&*&#&                                \n                   $&=-=*#******&%%&***#%**%##                                  \n                *&%&###$#&&&&&***&*****%&#%%+                                   \n            &%&*+=--=%&   *%#%&%%&***+%$$##%%###                                \n         #%&*=---:,. :$   %%*********%#+--+%#%%%#*                              \n      *%*+--::,.      %& %#+***%&&&&%#:,,,,,#&*+%%                              \n      #&:::,.:,,.     && &#&*&%*****%#,,,,,,%&*&#*                              \n      &#-.  =-+=:   :+#*%#####&*****&$%-::-&$%##   ###$                         \n       &%&**&&*&   +#*&%%&+++*&&%%%%#$######%   &%*=:-&#+                       \n              *#-,+#++++++++*%%&*++++**&%#&%&##%&+,  =.%&                       \n               *%#$#%&***&%%## %#%&*+++++*#=.:++==+ :--#                        \n                    %$###%        &%%%&*++%+   -=:..+.%*                        \n                                      %%%&*#,      =,+%                         \n                                         %##      ,=:#-                         \n                                           %+,    +.&*                          \n                                            #%*-.--+%                           \n                                              @#&%&#                            \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                             %%##%%%#%&&*       *%%%%%*                         \n                          %#%%&&****&&&&%%%%%##%%&***&%%                        \n                         %#&****************&#%***+****#*                       \n                        *#******************&*****&%&**#+                       \n                        #%+*********************&#%***&%                        \n                        #%********************&%=-#***#+                        \n                        &#*******************%*, ,#**#&                         \n                         #%****&***********&%-   +%*#&                          \n                          #%***%&*********&&,    *%$%                           \n                   #%&*&##-%#*+*%********&$*-,.    :+&&                         \n                  #%:,,,:&$%&#%*&&******&@@@@#&&*=-:,:%&                        \n                  $=,,,,,-$&$&%#&%******$@@$&*&#%%##%&%                         \n                  #%:,,,:&%+%&%%$$%****%$#&*&#%=                                \n                   $%**&%%**+++***&&***#**&##&                                  \n               &&&**%#%#%%%&%%&&&%*****%%$%&&%                                  \n           %%&*+=--::*#   -%#&&&&*****#$#%##%###&                               \n        #%&+=--::,.  ,#  *#&*********#*:,,:*#&&&#&                              \n      &%+-:::,.       && #%+**&%&&&&#%,,,,,,%&++%%                              \n      #&:,. ,-=-,    .%& *$%&%&*+***&#:,,,,:#&&%%                               \n      *#+:,,+==+,  .*&#%##%&##%%&&&&%$#*==*#$#$#  %%&&$%                        \n        %##%%%&%   &%+*&&*+++*&&&&&%%#%#$$#+%  +%&-, -+#&                       \n               #+=&$*+++++**%##%&*+++++*&%#&+&#%*-: .+.%&                       \n                #@ &#%&&%%%#%   %%%&**++++#-  :+=+= =,+#                        \n                      $#           %%%%&*+&&.  ,-. ,=,#=                        \n                                       %%%&$,      +.&&                         \n                                          %#.     -:-#                          \n                                           %&-.  .=,%=                          \n                                             #%*-+=&%                           \n                                               @%#%%                            \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                               &&%%&%+            &*&                           \n                           &##%%%%%%%%%%%#%&%  %%%%&%%%&                        \n                         +#%&*************&&%##&***++**#+                       \n                        =#&*****************&&*****&&**#*                       \n                        %%+**********************%#%**&#:                       \n                        #&*********************&&&%+**#&                        \n                        %%+******************&%=.,#**%%                         \n                        +#&*****************%&,  -#+%#-                         \n                         &#&***%***********%+    %#%#:                          \n                    ##%#$ *#&**&%*********#+     ,-&%&                          \n                  &#*-:-+##*%%*+%&*******#@$#&+-:.  .-%*                        \n                  #+,,,,,=$%#&#%*%******#@@@$&&##&&**+%&                        \n                  #+,,,,,=#*#%%#$#*****&@@#&*&%&                                \n                   $*---*#*****&%%%&***#%**&##+                                 \n                +*%%###$#&&&***********%&%%%*                                   \n             &&&*=--+%&  %&%##%%%%***+&$$$#%%###                                \n         %%&*+---:,. -$   %#&********&#*==*##%%%#*                              \n       %&+=-:::.      %* %#****%&&&&&#:,,,,:#&*+%%                              \n      #&:::,.,..      && %#**&%*****%%,,,,,,%&+&#&                              \n      %%:   =-+=:   ,+#* #$###&****+*$&:,,:*$%##&  #$##                         \n       &%&++&&**   =#*%%%&*+*&%%%%%%#$##%%####  *%*+-=%#+                       \n           @%#&#:.=#*+++++++*&%&*++++*&%%#*%%##%%+.  =,%&                       \n               &%%$#%****&&%## ##%&*+++++*#=.-*+=-+ :-:#-                       \n                    %####%%       %%%&*+++%=   -+-..+.%&                        \n                                     &%%%**#,   .  -,+#                         \n                                        %%##.     ,=,#=                         \n                                          +%=.    =.&&                          \n                                            #%+:.:-=#                           \n                                              $#&%&#*                           \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                            %#%#%%%%#%%%&#*    *%%%%%%&                         \n                          %#%&*********&&&%%%##%&*****&#=                       \n                         %%*****************&%&********#*                       \n                        &#************************%%&**#=                       \n                        #&**********************%#%***%%                        \n                        #%+*******************%&::#**&#:                        \n                        *#******************&%=  :#+*#*                         \n                         ##****&***********&&,   &%*#*                          \n                     @#@  ##***&&*********%*     =*#%:                          \n                   #%*++&#&&#&**%********%@%*=:.   .-*&+                        \n                  #&,,,,,*$#&#%*&%******%@@@@#&#%*+=--%&                        \n                  $=,,,,,-$&$%%#%%******@@@#**%%& $##%%                         \n                  %#-,,,-%%+&&&&##%&***#$%**%#&                                 \n                  ###%%##&*************#*&%##                                   \n              &&&*++&#*%%%%%##%%%%*****%#$%&%%%                                 \n          %%&*+=--::.=$   *#%*********##&*%##%##%                               \n       &%&*=-:::,.   .#* &#****&&&***#=,,,,=#&**#%                              \n      %%-:::,,        && %%+**%&**&&#%,,,,,,%&+*#%                              \n      %%:.  -=+=:    :%* *$#%%&***++*$=,,,,=$&%#%                               \n       %*=-:*+++.  ,%&####&*&%%%%%%&%$$&**&$$#$  &%&**##                        \n         #$#%#%#. ,%&++**++++*&****&&&%%#$ &#  &%&,  --%&                       \n               %&*##*++++**&%###%&*++++*&%#*-+%&+-= ,=.#*                       \n                   *##%%%%%%     %%%&*++++#-  .==+: =.*%                        \n                                    %%%%*+&%.  .,  :-:#                         \n                                       %%%%#,     .+.%*                         \n                                          &#,     =,+%                          \n                                           &%+:  ,=:#:                          \n                                             $#&+*+%&                           \n                                                #%%                             \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                              %%%%%%#&**         &%&%%=                         \n                          *%#%%&&&&&&&%%%#%%%%%%%&&&&&%%                        \n                         &#%****************&#%****+***#*                       \n                        +#&+****************&&*****%&**#+                       \n                        %%+*********************&##&**&#                        \n                        #&*********************%*+#+**#*                        \n                        %#*******************%&: ,#**%%                         \n                        -#&+****************%+.  =#+%%                          \n                         *#&***%***********%:    &%#%                           \n                   %#%&%#%-#%*+*%*********$+,.    ,=*&*                         \n                  %%=:,,-%$&%#&+&&*******$@@@#&*=:,..:%&                        \n                  $=,,,,,-$%$&#%&%******$@@@#*&##%%%&&%*                        \n                  #*,,,,,*#*%%%%$#&****%@$%**%%*                                \n                   $&+=+&%***+***&%&***#&*&%#%                                  \n                &&&*###$#%%&&&&&&&*****%&#%&*                                   \n            &%&*+----&%   =%#%&&&&***+%$$##%%###*                               \n        #%%*+=--::.  ,$  +#%*********%%=::=%#&%&#&                              \n      &%*=--::,       %& %%+**&%&&&&%#,,,,,,#&++%%                              \n      #&::,.,:::.     && &$&*&%*****%#,,,,,,#&*&#+                              \n      &#=.  +-+=:   =*#&###%##&&&***&$%=--=%$###  %##%$                         \n        %%&&%%&&   +#*&%&*+++*&&&%%%%####$#%    &%+-,-*#*                       \n               #=:*$+++++++*&%#%&*++++*&%%%%*%#%&=,  +.%&                       \n               +%$$%%&**&&%##   #%%&*++++*#- ,=+=== -:=#                        \n                     $$##%         %%%&*++%*   :=: .=.#+                        \n                                      %%%&&$,      =,*%                         \n                                         %##      :-:#,                         \n                                           %*:    +.%*                          \n                                            ##&=,--*%                           \n                                               $%%%#                            \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                      *%%                                       \n                                    &#%&%#&                                     \n                                   %%***+&#+                                    \n                         %*&%%##&%%#&&****%&                                    \n                    %#%%%%&&&&************%&                                    \n                 %#%%&********************&%                                    \n               &#%************************%%                                    \n              &$&*************************%&                                    \n              #%+*************************#%*&&#                                \n              %&*************************&&..,:-%&                              \n              &#************************+#*:--=*%+                              \n               #%***********************&$%%$##                                 \n                ##&*****%&**************#%                                      \n                 %%%&****&%************#%                                       \n                   =##%%&**&&*********%%                                        \n                       %%%%%%&*******%#                                         \n                           %#%******%#                                          \n                          %%*******#%                                           \n                        &#&****#&**#&                                           \n                       %#&**&&#%***&#*                                          \n                  %#% -#*+*&%$$*%&&&%#                                          \n                #%+*&%&#*%&===&#%++*%&                                          \n              -%*:-: ,&#$*,,,,,+#&%%%                                           \n             &&-:-.   .*$=,,,,,-$&%%%                                           \n           +%+:-:      .##+:::=#&++*&%#                                         \n          &&::-. .,   .*#%%&&%$#%&++++&%##&*%=                                  \n         #+,-, -=+=.  :#++++&#&  %%&++*&%:  &&                                  \n         #*-   ==*&+  =#***%#&     %#&+=.  .*&&%%#                              \n         =%*++*&%#&%*+%%%%##       =%.     +=+-=,-*&                            \n                                   %*      .,::  .,&%                           \n                                   %*   ..,,,::::--%&                           \n                                   &%-::---==++***%%                            \n                                    #%**&&&&&&&                                 \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                       &##%%#&                                  \n                             * &*     %#&***&#=                                 \n                     %####%%%%%%%%%%%%#&*****#*                                 \n                  %#%%&**********************#&                                 \n                +$#&*************************#*                                 \n                #%**************************&#:                                 \n               +$***************************%%                                  \n               +#***************************$*-                                 \n                #%+************************%*=+*&%                              \n                +#&***********************%&   .:&%                             \n                 +#%*****%***************&$&*%&&&&+                             \n                   %#%****%&************&#*                                     \n                     %#%&**&&**********&#+                                      \n                       *%#%&%*********%#*                                       \n                          +%$%*******##                                         \n                         &#$$******%#%                                          \n                       +%%%#***%%+##                                            \n                      &#&&#****#*+&#=                                           \n                     *#**#****&$&&&#&                                           \n                     %#*%#%&&&%##**%%                                           \n                      %#$%-,,,-%$*&#*                                           \n               ##%    &#$:,,,,,:$#%*                                            \n              #*&*%#  *##*,,,,,*$%                                              \n             #=:- .=&# %&&&***&&*#&                                             \n            &*,=    .=%%#++*#%+++&#                                             \n           &&.+.     .#%*+++%$+++*#                                             \n          *%.=.  .   =#++++&#$&+*&#%%                                           \n         +%,=,.-+=,  .#%&%%%%$%%*-..%&                                          \n        -%:-: :=+=&-.,%&%  %*::,   ,#%%                                         \n        +#=-  ,*%#&%&&*   &&      ===+&&#                                       \n         *#***&%          #:      ,-+-, -&&                                     \n                         &#,........,,...:#                                     \n                         *$*-------------&#                                     \n                           %%&&&%%%%%%%%%%                                      \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                    &#%%#%                                      \n                                  *#%&***#%                                     \n                  %#%##%#%%#%%%##%#%*****&#                                     \n               %#%%&&***************&****&#                                     \n             &$%*************************&#                                     \n            +#&**************************%%                                     \n            %%+**************************#+                                     \n            #%*************************+%%                                      \n            &#**************************#*&&&#                                  \n             #%************************#:  .:+#+                                \n             ,##*****%&***************%#++++**%-                                \n               ##%****%&*************%#+                                        \n                 ###&*+&%***********%%                                          \n                   ###%&&&*********#%                                           \n                      ##$#*******&#%                                            \n                   ###%&&*******%#+                                             \n                 &#%&**+*&&***&#&                                               \n                %%**&&*&%%*****%#%#                                             \n               %#*+**%$%****&&&&$==%*                                           \n               $&*%%&*%#****%***#*.+%                                           \n               #%#+,,,,=#&*%***&%:,&&                                           \n               *$&.,,,,.*$#%#%##++&%                                            \n               @%$+:,,,-#&+*&%%&##                                              \n              #**:=++*%#*+++++&#&                                               \n             =%.=    .,%%%%%*++&#                                               \n             +%.+      +#*+++++*#                                               \n             *%.+       =%*++*&%%                                               \n             *%.+  -=:.  =$%%&%&                                                \n             *%.+ -+==#***&&%%                                                  \n             &%.+ .:=%-:*-: ,*%                                                 \n             *#,=  -%-..,,....&%                                                \n              #%%+&*---------+#&                                                \n               %%#%&&%%%%%%%%%#                                                 \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                      %#%%                                      \n                                    ##&&&#%                                     \n                   &%%####%##%######&*****#+                                    \n               %##%%&&&*********&&&&&&****#&                                    \n              ##&*************************#&                                    \n             #%***************************#                                     \n            &#***************************%#                                     \n            %#+**************************#=                                     \n            &#*************************+%#**=                                   \n             ##************************&&,:=+*%                                 \n              ##*****&&***************&$-,,,,=#*                                \n               %#%****%&*************&#%&####%&                                 \n                 %#%&**%&***********&#&                                         \n                  +%##%*&&+********%#+                                          \n           %##%%%%&&&%###%&*******##                                            \n        &%&*&%%***+++++***&*****%#%                                             \n       &%-,,,,*#***%%%%%%&****&#%     ##%#%                                     \n       %*.,,,,,#&%#&#%***&****&#+    %&=--=%%                                   \n       &%-,,,,+#%%*#&**********%$##%#&,,,,,:#+                                  \n        %%&**&#   #%+******&%&&*#%&&%&,,,,,:#+                                  \n                  ##*******%*+**#*++*%&-:-=%%                                   \n                   ###%%%%#%&%%$#%%&&&#$##%*                                    \n                     #%********+**&#&#%                                         \n                   #$#$%&&&&%%*++++#&                                           \n                 *##&:,,,,,-#*++*&%%                                            \n                %%%*,-      -&%#%%                                              \n              *%%&&$:=,       .+%                                               \n            ###%&-,:%.+.  --,,,-%-                                              \n           %&-:,   .#+,= ,&=+#%%+                                               \n          +%.     -==#:=,.--*%                                                  \n          #=      ,:++%.+   &&                                                  \n          $:........,,**:=.+%                                                   \n          #&=----------+&##%                                                    \n           %%&&&%%%%%%%%%%                                                      \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                     &#%%%                                      \n                                    ##&**&#*                                    \n                         #%$%#$@%$#$%****+#%                                    \n                   $$###%%%%&&&&&&&&&&****&#                                    \n                *##%&*********************&$                                    \n               $#&************************%$                                    \n              $%**************************#%                                    \n             *$***************************$=                                    \n             +#**************************%%**&&%                                \n             ,#&+************************#.  .:*#                               \n              &#&***********************##+++**%%                               \n               %#%*****%&**************&$%@#                                    \n                 %#%&***&%************&#*                                       \n                   %%%%&**%&*********&#&                                        \n                 &%%%%##$#%%&*******%$&   *%%&%#&                               \n              %%%%&&&***&&&&%&*****%$   $$%-:,,-%&                              \n           &%##%&+********&*******##& &#%$=,,,,,-%                              \n          %&=::-&%***#%##&&&*****%#*&%#&+%*,,,,,*%                              \n         +#:,,,,,%&&%&%%**********#%***+**%&+++&#                               \n         +#:,,,,,%$%-#&*******&%&&&$%%%%%%%#$$$                                 \n          %%+--=&##  $&*******%****#*                                           \n            ####*    ###%&&*&%&*&%#%%%%+                                        \n                      =$&&&&%%&%%&**++&#                                        \n          @#$@@     %%%%%&&***&&&*=#*+*#                                        \n         #**:-=+*%#%&*+++&$=&-:,.  +#%#&                                        \n        =%.=     ,%*+++*%%#.=      .+#                                          \n        +%.+      +#&&%&&+%.+  :=:   +#                                         \n        *%.+       =#*   *%.+ :*==&+=*#                                         \n        *%.+  -=:   =#   &%.+ ,-=%% @                                           \n        *%.+ -+==%*+&%   *%.=  ,&%                                              \n        &%.+ .:=#&        #&&-+%%                                               \n        *#.=  :%%          $#$                                                  \n         #%&=*#                                                                 \n           #@                                                                   \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                     *%%%%                                      \n                                    ##&**%#                                     \n                            &%$@%$##%*****#%                                    \n                    $####%%%%%%%%%%%&&****&#                                    \n                +###%&********************&#                                    \n               $#&************************%$                                    \n              $#**************************#%                                    \n             *$***************************$=                                    \n             +#**************************&#*&&&%                                \n             :#&*************************#, .,:*#                               \n              %#&***********************%#===+*&%                               \n               %#%*****%&**************&$#$#@                                   \n                 ##%****&%************&#&                                       \n                   %%%&***%**********&#&*#%&%%+                                 \n               %#$##%&#$#%&%********&$%%%-:,:=%&                                \n            %##$#&*******&&&%%*****%$%=#-,,,,,=#                                \n           %&-::=%&***&***********##&%&#+,,,,,*%                                \n          %&,,,,,:#**####%%%&****%#*+++*%&+=+%$                                 \n          &&,,,,,:##%*%%**********##&&&&*&%#$#                                  \n           %&=--+%#% #%*******&&&&%#=%%%%#%    #%%&                             \n            %####    $&+******%&***#*       %&*-:*&&                            \n                     #$%&&**&%&**&#%  =%%%&#&-  .=:#                            \n           %%%*%##    %#&&%%#%%%##%%%%#-:+%===- =,*&                            \n          &%,+ .-+&#  %$%**++++++++**&#,  .=+-.,=,#,                            \n          %=:-    .=#%&**&%#%%&&&**+++&%.   .  =,*&                             \n         :%,+.     :#++++&%&   %%%%%%&&#.     ,=,%.                             \n         **,=  .   .&&*&%#           %%#-     =,*&                              \n         %:-, :+=,  .#%%               =%&=, ,=:#                               \n        +%.+ :+==%+-=%                    #%&&&%*                               \n        %=:-  :*#% ##                                                           \n        %&*::=*%                                                                \n         %%%%#                                                                  \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                 %%%#&                                          \n                               *#%**&#&                                         \n                              *#&****&#-                                        \n                      *%%%###%#%&&****#%                                        \n                 %#%#%%%&&************%#                                        \n              %##%&*******************&#                                        \n            *#%&**********************&#                                        \n           %#&************************&#-+*                                     \n          +$&*************************%&=+++*#                                  \n          &#**************************#,  .:+#=                                 \n          +$**************************$**%%##                                   \n           %#************************%%                                         \n            %#&******%&*************&#-                                         \n             *##%*****&%************#&                                          \n                ###%&***&&*********##                                           \n                %%%%#$#%%%%*******%#                                            \n               %*-::+#&*&&%%&****%#%#%%#                                        \n              #*,,,,,-#*********%#%*-::+%*                                      \n              %*,,,,,-$%%%%*****&$*,,,,,=%                                      \n               %&=--*#&***&*****+%&,,,,,=%                                      \n                %##%$&+**%&&&&&%**$&=--*#+                                      \n                    #%**%&+++++&%&#&####                                        \n                     #$##%%&&&%%$#*                                             \n               *%&*&#*#&+*****%#%                                               \n             &&*=--:,%*#%*+++++*&%%%    #%                                      \n          &&*=--:,   ,#%%%%%&*++++*&%&#&+*%                                     \n        %&+-:-:.      *%+++#%%%&*++*&#-  .#&                                    \n      =#+:-:,,,,,    .*%++&#-  %%%%=:.  .-+*&&&%%                               \n      +#=,  .=+=+.  :#%&&%#*     #+     ,++==..:*%                              \n       *%+=-+*&*&   &#%%%        #:       .,..,,:#*                             \n          #$##% %+-*#            #: ..,,:::::---*#=                             \n                 &%&             %%=---==++**&&&#                               \n                                  %%&%%%&*                                      \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                  &%%%%&                                        \n                                 %#&***#%                                       \n                          +&$#####*****&#                                       \n                   %%%#%%%%%%%&&&&&*****#*                                      \n               &%#%%&&******************#%                                      \n             +##&***********************#*                                      \n            &#&*************************#+                                      \n           +$&+*************************$+*+                                    \n           *#**************************%&==++&#                                 \n           +#**************************#,  .:+#=                                \n            %#************************%$*&%%##                                  \n             %#&*****&&***************#+                                        \n              &#%&****&%*************#&                                         \n                &##%&*+*&&**********#%                                          \n                   #%#%&&&&********%%                                           \n                      +%###&******%#                                            \n                       &#%&******#%                                             \n                     +%%****&***%#                                              \n                    &#&***+#%+***#&                                             \n                    #&+*&%%#*&&&&%$#                                            \n                   +#*****&%##%&**#*%&                                          \n                    #&+**+*%+:=%%#+,-#                                          \n                    %#%*+&#-,,,,#-,,-#                                          \n               *&&&*++$$%$=.,,,-#--+#%                                          \n           &&&*+=--::::#&%&===*##%##                                            \n        %&*+=-:::,..   +$&*&&&*+&#*                                             \n       *#-:::,,.       -#&%%*++++*#+                                            \n       -#=.  :-*==    .+%++*%%++++%#                                            \n        =%&+=*+++,  .*&&++++%$*++&%#%&                                          \n            $&%&#. .&$%&&&&%&#%&%=,.+#                                          \n                &&*%#  ####*%-::.   &%#                                         \n                           #:     :+=+*&%#                                      \n                          #*      .:+-: ,*%                                     \n                          $=........,,....&%                                    \n                          #%=------------+#&                                    \n                           &%&&&%%%%%%%%%%#                                     \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                     %%%&                                       \n                                   ##%&&%#                                      \n                                  ##*****#%                                     \n                    #####%#%%%#%%##&&****%#                                     \n                %##%%&&******************&#                                     \n              ##%&***********************&$                                     \n             ##**************************%#                                     \n            *$***************************#+                                     \n            +#**************************&$**&*                                  \n            -#**************************#-,,-=*%                                \n             %#************************%%,::-=&#                                \n              ##&*****%****************$###$$$                                  \n               &##&****%&*************#%                                        \n                 %#%%***&%***********#%                                         \n                    &##%&&&*********##                                          \n                       ####&******&##                                           \n                        &#&******%#*                                            \n                      *$%***%***%#                                              \n                     %$%***&$****#&                                             \n                    %#$***&$&*&&&%#                                             \n                    ##%****&#$%***#*                                            \n                    #$%+***%&=+%&%#                                             \n                  #%%#$&+&%-,,,:$#                                              \n               &%&=-+*$#%#:,,,,:#*                                              \n             &&+---,  *#&#*-:-=%#                                               \n          &&*=:-:,     ##+&&&%$&                                                \n        &&+-:-,.       =@%++++##                                                \n       +#-::, -===.  .=&*#*+*&%#%                                               \n        #*,  ,=+=+   +$**#%%*:.,#                                               \n         &&&*&%%%%: :%*#+::,   -#%&                                             \n                 *%*%&%*     .+=++&&#                                           \n                      #.      :==-..=%*                                         \n                     %&.........,,...=#                                         \n                     %#+------------=%#                                         \n                      &%&&&&%%%%%%%%%%                                          \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                      %%%                                       \n                                    ##&&&#%                                     \n                                  %#%***+&$=                                    \n                    $#####%%%%%%%%#%&&****#&                                    \n                +###%&&*******************#%                                    \n               ##&************************#$                                    \n              $%**************************#*                                    \n             ##+*************************&#                                     \n             %%**************************#%*&&&                                 \n             *#*************************&&.,:-+%&                               \n             =#%************************#+::--+%&                               \n              *$%*****&%***************%$###$@@                                 \n                %#%****&%*************&#                                        \n                  ##%&***%&**********&#*                                        \n                    +%##%&%&********%$*                                         \n                        &%##*******%$                                           \n                     -*&%#%&******#%                                            \n                   *#%&%#&*#**&&*#&                                             \n                   #&*#%*+#%***$*##%%#%                                         \n                   $&#&***$***%###:::=&%                                        \n                   &##+**&$*****&#,,,,,#&                                       \n                    +$#&**##*****#-,,,-#&                                       \n                      $$%%%##%%%&#%-=*%%                                        \n                       #+++++**#$#$###                                          \n               *#%**&%%$&+++%%++%%                                              \n               %=-,  .,#&++*#*++*%                                              \n               #:-,   =%*&&$&+*&#+                                              \n               #--, .=$%*-,:#%%#                                                \n               #:-,=*--:   :#&                                                  \n               #:-+&     .==+*%%#                                               \n               #:-#,      :+=-,.+%*                                             \n               #:=%.........,....=#                                             \n               %&*$=--------::---&#                                             \n                $#$%&&&&&&&&&&&&&%                                              \n                                                                                ", "                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                                                                \n                                       %                                        \n                                    %#%&%#&                                     \n                                   #%****&$                                     \n                     #$#####%###%###&*****#&                                    \n                 %###%%&&*****************#&                                    \n               ##%&***********************#$                                    \n              $#**************************#&                                    \n             ##**************************&#                                     \n             %%*************************+%#+++                                  \n             &#+*************************%--=+*%&                               \n             =#&+***********************#+...,-%%                               \n              %$%*****&&***************&$%%%###%                                \n                ##&****&%*************&#&                                       \n                 &##%**+*%***********&#&                                        \n                    &%#%&*%&********&#%                                         \n                      $%%%#%*******&$%                                          \n          &#%#$%&&%&&&&&&##&******%#                                            \n         #&=--+%&*++***&#%****&#*#%    %##$#                                    \n        %&,,,,,-#*&%%%##&**%#**&##%#$##*=-=*%+                                  \n        %*,,,,,:$%%% #%*****$***&##%&%#,,,,,+%                                  \n         #*-::=%&   %#+*****%#********#=,,,,-#                                  \n          &#%%#     &$%******##&*******#+::=%&                                  \n                    *#%%%%%%#%%$#%%&&&%#$%%#                                    \n                    #%+++*******+**&#%                                          \n                  &#%++++++**&&&#*++#&                                          \n                 %#*+++++*%*=-,,%%*%#                                           \n                %%+++++*&%:     .-&#                                            \n              *#%&&&*+&#+-,  .:.   *&                                           \n            #%$#+,.-$%%*&.+  ++-***&*                                           \n           #=::.   +#%  #:=,.+-+#+                                              \n          #=     ,+=+*&%%&.=  .*%                                               \n         %%      .:+--..+$:=, =%                                                \n         #*.........,....*$&&&%                                                 \n         ##=------------=#%                                                     \n          &%&&&%%%%%%%%%%%                                                      \n                                                                                "];
     const durations = [90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90];
-    const introScript = [{"type": "command", "prompt": "streetboy@neoretro:~ ", "text": "./release_status --live"}, {"type": "pause", "ms": 420}, {"type": "line", "text": "StreetBoy: Beat Rush is OUT NOW on the App Store and Google Play."}, {"type": "line", "text": "A beat-driven rhythm action game packed with stylish city stages, graffiti-inspired visuals, and energetic disco-inspired tracks."}, {"type": "line", "text": "Tap, jump, and hit to the beat. Defeat rhythm monsters, keep your combo alive, and aim for FEVER!"}, {"type": "pause", "ms": 1500}];
+    const introScript = [{"type": "command", "prompt": "streetboy@neoretro:~ ", "text": "./launch_status --brief"}, {"type": "pause", "ms": 420}, {"type": "line", "text": "Street Boy, a new-retro rhythm action game, is getting ready for launch."}, {"type": "line", "text": "Filled with diverse cultural codes and high-quality disco-inspired tracks, it is here to send your ears into ecstasy."}, {"type": "line", "text": "Coming soon to Google Play and the Apple App Store, Street Boy is preparing to bring stylish beats, vibrant energy, and a fresh retro groove to your fingertips."}, {"type": "pause", "ms": 1500}];
     const fallbackFrameMs = 90;
     const titleTickMs = 90;
 
@@ -983,16 +492,6 @@
       introBaseHeight = introShell.getBoundingClientRect().height;
     }
 
-    function readStageShift() {
-      const transform = window.getComputedStyle(stageTrack).transform;
-
-      if (!transform || transform === "none") {
-        return 0;
-      }
-
-      return new DOMMatrixReadOnly(transform).m42;
-    }
-
     function updateStageLift() {
       if (!stageTrack || !introShell) {
         return;
@@ -1015,12 +514,10 @@
 
       root.style.setProperty("--stage-shift-y", `${-roundedLift}px`);
 
-      // The stage eases toward its new lift, so measure where it will settle rather than where it is mid-transition.
-      const pendingShift = -roundedLift - readStageShift();
       const sceneTop = Math.min(
         titleOutput.getBoundingClientRect().top + sceneScrollOffset,
         characterOutput.getBoundingClientRect().top + sceneScrollOffset
-      ) + pendingShift;
+      );
       const neededScrollSpace = Math.max(0, Math.ceil(-sceneTop));
 
       root.style.setProperty("--stage-scroll-space", `${neededScrollSpace}px`);
