@@ -1,0 +1,132 @@
+# Tala Tarot Privacy Policy
+
+**Effective Date:** November 8, 2026  
+**Application:** Tala Tarot (Android and iOS)  
+**Developer and Publisher:** CACO  
+**Privacy Contact:** deathcry.kr@gmail.com
+
+## 1. Introduction
+
+Tala Tarot ("Tala" or "the App") is an AI-powered conversation and tarot-reading application developed and published by CACO.
+
+This Privacy Policy explains how we collect, use, store, protect, and share information when you use the App.
+
+Tala automatically creates an installation-based account without requiring an email address, name, or password. The App connects to services hosted at tala.caco.kr.
+
+## 2. Information We Collect
+
+**Device and Account Information**
+
+We process randomly generated installation identifiers, authentication credentials and their cryptographic verifiers, device platform information, optional device names, account and session identifiers, authentication tokens, connection timestamps, and relevant IP addresses.
+
+We do not use permanent hardware identifiers such as IMEI or SIM serial numbers for account authentication.
+
+**Conversations and Tarot Readings**
+
+We process messages, questions, conversation history, AI-generated responses, tarot card selections and interpretations, character settings, and conversation preferences.
+
+Information that users voluntarily provide may include personal or sensitive details, such as relationships, emotions, occupation, age, or health concerns.
+
+**AI Memory and Technical Information**
+
+We may create and store conversation summaries, memory episodes, and contextual information for personalized responses.
+
+We may also process connection information, operational logs, and error details to maintain reliability and security.
+
+The current Android application does not request access to contacts, precise location, camera, microphone, SMS messages, or call logs.
+
+## 3. How We Use Information
+
+We use information to:
+
+- Create and authenticate user accounts
+- Provide AI conversations and tarot readings
+- Store and restore conversation history
+- Personalize responses using relevant memories
+- Maintain service reliability and security
+- Prevent misuse and investigate technical problems
+- Respond to privacy requests
+- Comply with applicable legal obligations
+
+## 4. AI Services and Third-Party Processing
+
+Tala uses external AI services to generate responses and tarot interpretations.
+
+Relevant user messages, prompts, conversation context, and saved memory may be transmitted to AI processing services.
+
+The currently configured inference route includes The Hive AI and a DeepSeek model.
+
+We may also use hosting, database, networking, and security infrastructure providers.
+
+Information may be processed outside the user's country of residence.
+
+We do not sell personal information or use private conversations for targeted advertising.
+
+## 5. Data Security
+
+Tala uses HTTPS and secure WebSocket connections to protect information transmitted between the App and its servers.
+
+Installation credentials are protected using Android Keystore-backed encryption on Android and Keychain storage on iOS.
+
+We use authentication and access controls to restrict unauthorized access.
+
+However, no electronic storage or transmission system can guarantee absolute security.
+
+## 6. Data Retention
+
+Account information, conversations, tarot readings, and preferences may be retained to support continued use and conversation restoration.
+
+AI memory is stored separately. The currently configured retention period for AI memory episodes is 90 days, but this does not mean that all account information, conversations, or backups are automatically deleted after 90 days.
+
+Operational records may be retained as necessary for security, service operations, or applicable legal obligations.
+
+Uninstalling the App does not automatically delete server-side information.
+
+## 7. User Rights and Data Deletion
+
+Users can reset conversation history or reset both conversation history and AI character memory from within the App.
+
+These functions do not delete the underlying installation account.
+
+To request access to, correction of, or deletion of personal information and associated account data, contact:
+
+**deathcry.kr@gmail.com**
+
+Account deletion instructions:
+
+https://tala.caco.kr/delete-account
+
+We may require reasonable verification of account ownership before fulfilling an account-specific request.
+
+Never email installation secrets, access tokens, or other authentication credentials.
+
+Verified requests will be handled according to applicable law and any legally required retention exceptions.
+
+## 8. Children's Privacy
+
+Tala Tarot is not designed to target children below the applicable digital-consent age.
+
+We do not knowingly seek personal information from children who cannot lawfully consent.
+
+Parents or guardians may contact us if they believe a child has provided personal information.
+
+## 9. International Data Processing
+
+Information may be processed by service providers operating in countries outside the user's place of residence.
+
+Depending on applicable law, users may have rights to access, correct, delete, restrict, or object to the processing of their personal information.
+
+Please contact us to exercise applicable privacy rights.
+
+## 10. Changes to This Policy
+
+CACO may update this Privacy Policy when service functionality, data practices, third-party providers, or legal requirements change.
+
+Updates will be published with a revised effective date.
+
+## 11. Contact Information
+
+**Application:** Tala Tarot  
+**Developer and Publisher:** CACO  
+**Privacy Contact:** deathcry.kr@gmail.com  
+**Website:** https://caco.kr
