@@ -1,0 +1,10 @@
+Tala Tarot Child Safety Standards
+
+CACO prohibits child sexual abuse and exploitation (CSAE) on Tala Tarot. Child sexual abuse material (CSAM), sexualization of children, grooming, enticement or coercion for sexual exploitation, and any activity that promotes such conduct are not allowed. These standards apply to both user input and AI-generated responses.
+
+Please report child safety concerns to travis@caco.kr. Include the app name, the time of the incident, and only the information needed to help us identify the issue. Do not copy or attach illegal content, passwords, or authentication credentials.
+
+Reports are reviewed, and appropriate action is taken when a violation is confirmed, including removing content or restricting access. When CSAM is identified, it is reported to the relevant authorities as required by applicable law, and necessary procedures are followed.
+
+Child safety contact: travis@caco.kr
+Effective date: Date of publication
