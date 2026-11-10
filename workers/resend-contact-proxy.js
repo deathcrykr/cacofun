@@ -113,7 +113,7 @@ export default {
         },
         body: JSON.stringify({
           from: "CACO Contact <onboarding@resend.dev>",
-          to: ["travis@caco.fun"],
+          to: ["travis@caco.kr"],
           subject: `[CACO Contact] ${name}`,
           reply_to: email,
           html:
